@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 1 of 6. Why a business person and a data person can sit in the same meeting and leave with two different projects, the Six Doors framework for the questions that close that gap, and the teach-back line that makes the business person learn something every time you ask.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Why the gap exists, and the Six Doors - learn asking the right questions as a data analyst with phoebe">
+<meta property="og:description" content="Session 1 of 6. Tappers and listeners, the six doors every discovery meeting has, and the one sentence that turns a question into a lesson.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/courses/01-why-the-gap-and-the-six-doors.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why the gap exists, and the Six Doors - learn asking the right questions as a data analyst with phoebe">
+<meta name="twitter:description" content="Session 1 of 6. The gap, the six doors, the teach-back line.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 1 · Why the gap exists, and the Six Doors - learn asking the right questions as a data analyst with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-asking-right-questions-as-da-with-phoebe</a> / Session 1 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Asking the Right Questions as a Data Analyst with Phoebe · Session 1 of 6</div>
+    <h1>Why the gap exists, and the <span class="accent">Six Doors</span></h1>
+    <p class="sub">An operations director asks for a sales dashboard. An analyst hears a data request and starts asking about exports and refresh schedules. Six weeks later there is a dashboard, it is correct, and nobody opens it, because the thing she was worried about was six outlets running out of chronic medication and the word she had for that was "dashboard". Neither of them was careless. They were using the same words for different things, and nobody in the room had a way of noticing. Tonight is the way of noticing: why the gap opens every time, the six doors every discovery meeting has, and the one sentence that lets the business person learn how data work thinks while she is answering you.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Core</span>
+      <span class="chip audience">Analysts, and anyone who gets asked for numbers</span>
+      <span class="chip audience">No code. A pen.</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The gap, the doors, the teach-back</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: your Six Doors sheet</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">Most of what goes wrong in data work goes wrong in the first meeting, and it goes wrong quietly. The business person says what they want in the vocabulary they have, the data person translates it into the vocabulary they have, and both walk out believing they agreed. The running case for all six sessions is Harbourline, an invented chain of 38 pharmacy and clinic outlets across Singapore and Malaysia, and its operations director Adeline Tan, who has never heard the word pipeline and does not need to. She has a request. You have 45 minutes with her. Everything in the six sessions is about what you ask in those minutes.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> A one-page Six Doors sheet for a request you actually have on your desk, two open questions behind each door written in the past tense, a plain teach-back line attached to each one, and a mark on the door your role should open first. Session 3 puts that sheet in front of Adeline and counts what it gets out of her.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers why the gap opens</span>
+      <h2>Two people, one word, two meanings</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">In 1990 a Stanford psychology student, Elizabeth Newton, split people into tappers and listeners. Tappers picked a well-known song and tapped its rhythm on a table; listeners had to name it. Before tapping, tappers guessed the listeners would get about half the songs. Listeners got 3 of 120. The tapper cannot stop hearing the tune, so the taps sound obvious; the listener hears knocking. Every discovery meeting has a tapper on each side of the table.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn table with a tapper on the left, a tune floating above her head, and a listener on the right hearing only knocks. Between them the tapper's guess, about 50 percent, sits against the listeners' result, 3 of 120 songs, 2.5 percent. Below, the same table redrawn with the operations director on the left, whose tune is six outlets short of chronic medication, and the analyst on the right hearing the word dashboard.">
+        <defs>
+          <filter id="s1aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="11" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s1aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s1aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s1aH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s1aL { font: 600 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s1aS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s1aB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s1aV { font: 800 20px Inter, sans-serif; fill: #075985; }
+          .s1aN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s1aH" x="30" y="26">TAPPERS AND LISTENERS, 1990</text>
+        <text class="s1aS" x="250" y="26">the tapper hears the whole song; the listener hears a table being knocked</text>
+
+        <g filter="url(#s1aSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- tapper -->
+          <circle cx="90" cy="96" r="16"/>
+          <path d="M60 150 C66 122 114 122 120 150"/>
+          <!-- the tune, a thought cloud -->
+          <path d="M112 66 C104 48 128 36 140 46 C150 30 180 36 178 54 C196 56 194 78 176 80 L120 80 C106 80 104 70 112 66 Z" fill="#FBEDE6" stroke="#B0451C"/>
+          <!-- table -->
+          <path d="M150 150 L330 150" stroke-width="3"/>
+          <path d="M162 150 L162 176 M318 150 L318 176"/>
+          <!-- taps -->
+          <path d="M178 136 L178 126 M196 138 L196 130 M214 134 L214 126 M232 138 L232 132" stroke="#4A5B6E"/>
+          <!-- listener -->
+          <circle cx="380" cy="96" r="16"/>
+          <path d="M350 150 C356 122 404 122 410 150"/>
+          <!-- what the listener hears -->
+          <rect x="300" y="44" width="150" height="34" rx="6" transform="rotate(0.8 375 61)" fill="#FFFFFF" stroke="#C5D3DF"/>
+          <!-- the two numbers -->
+          <rect x="500" y="56" width="160" height="82" rx="8" transform="rotate(-0.5 580 97)" fill="#F0F9FF"/>
+          <rect x="690" y="56" width="160" height="82" rx="8" transform="rotate(0.6 770 97)" fill="#FBEDE6" stroke="#B0451C"/>
+          <!-- second table: Harbourline -->
+          <path d="M40 206 L840 206" stroke="#C5D3DF" stroke-dasharray="6 5"/>
+          <circle cx="90" cy="252" r="14"/>
+          <path d="M64 298 C70 274 110 274 116 298"/>
+          <path d="M112 226 C104 210 126 200 138 208 C148 194 176 200 174 216 C192 218 190 238 172 240 L120 240 C106 240 104 230 112 226 Z" fill="#FBEDE6" stroke="#B0451C"/>
+          <path d="M150 296 L330 296" stroke-width="3"/>
+          <circle cx="380" cy="252" r="14"/>
+          <path d="M354 298 C360 274 400 274 406 298"/>
+          <rect x="300" y="212" width="150" height="34" rx="6" transform="rotate(-0.6 375 229)" fill="#FFFFFF" stroke="#C5D3DF"/>
+          <path d="M456 229 L560 229" marker-end="url(#s1aAr)"/>
+          <rect x="570" y="212" width="280" height="70" rx="8" transform="rotate(0.4 710 247)" fill="url(#s1aHc)"/>
+        </g>
+
+        <text class="s1aS" x="120" y="64">the song, whole</text>
+        <text class="s1aL" x="90" y="176" text-anchor="middle">tapper</text>
+        <text class="s1aS" x="375" y="65" text-anchor="middle">knock, knock, knock-knock</text>
+        <text class="s1aL" x="380" y="176" text-anchor="middle">listener</text>
+        <text class="s1aS" x="580" y="80" text-anchor="middle">tappers predicted</text>
+        <text class="s1aV" x="580" y="108" text-anchor="middle">about 50%</text>
+        <text class="s1aS" x="580" y="128" text-anchor="middle">of songs would be named</text>
+        <text class="s1aB" x="770" y="80" text-anchor="middle">listeners named</text>
+        <text class="s1aV" x="770" y="108" text-anchor="middle">3 of 120</text>
+        <text class="s1aB" x="770" y="128" text-anchor="middle">2.5 percent</text>
+
+        <text class="s1aS" x="118" y="219">six outlets short</text>
+        <text class="s1aS" x="118" y="235">of chronic meds</text>
+        <text class="s1aL" x="90" y="318" text-anchor="middle">Adeline</text>
+        <text class="s1aS" x="375" y="233" text-anchor="middle">"we need a dashboard"</text>
+        <text class="s1aL" x="380" y="318" text-anchor="middle">the analyst</text>
+        <text class="s1aB" x="584" y="236">WHAT GETS BUILT</text>
+        <text class="s1aS" x="584" y="254">a correct sales dashboard, six weeks,</text>
+        <text class="s1aS" x="584" y="270">opened twice, and the stock-outs continue</text>
+
+      </svg>
+      <figcaption>🔍 Click to zoom - the bottom row is the top row with the tune replaced by an operations problem and the knocking replaced by a word</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The tune in your head, and why neither side can hear the other's<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Newton's tappers were not bad at tapping. They were unable to <em>un-know</em> the song while they tapped, so every knock arrived with the melody attached, and they judged the listener's chances from inside that experience. Economists had named this a year earlier: Camerer, Loewenstein and Weber called it the curse of knowledge, the finding that better-informed people cannot fully set their information aside when predicting what less-informed people will understand.</p>
+        <p>In a discovery meeting there are two tunes. The business person's tune is the operational worry: which outlets, which supplier, which Monday phone call. The data person's tune is the machinery: exports, joins, refresh cadences, the shape of a table. Each hears their own tune behind every word the other says. "Dashboard" is knocking. To Adeline it means "make the Monday problem go away". To the analyst it means a page with charts on it. Both leave the meeting sure they agreed.</p>
+        <p>The gap is not closed by either side learning the other's vocabulary. It is closed by <strong>questions that make the tune audible</strong>: about the decision, the current way of working and the real state of the data, asked in words that need no translation, with the reason for asking said out loud. That is the rest of tonight.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The translator role, and why you should not wait for one<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>In 2018 three McKinsey partners argued in <em>Harvard Business Review</em> that analytics teams needed a named role, the analytics translator, whose job is to make sure the analytics work actually solves the business problem. The article is worth reading for the shape of the role. The number of translators the firm predicted the economy would need circulates widely and was not read at source, so it is not quoted here.</p>
+        <p>The practical point: most teams do not have one. The translation happens, or fails to happen, in the first meeting, and the person running that meeting is you. Treating the discovery conversation as part of the analyst's craft, rather than somebody else's job, is the position these six sessions take.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The stand-in request.</strong> A constructed case, but the shape is the most common one there is. Harbourline's Monday sales report is late and untrusted, so the request that reaches the analyst is "a dashboard". The worry underneath is stock-outs of chronic medication in six Malaysian outlets, and the decision the report is supposed to feed is next week's reorder quantity per outlet, due Tuesday noon. Nothing in the word "dashboard" carries any of that. It comes out in about four minutes if you ask what happens on Monday morning, and never comes out at all if you ask about the data warehouse.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the framework</span>
+      <h2>Six Doors</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">A discovery meeting is a corridor with six doors. Behind each one is a kind of fact you need before you can build anything, and each opens to a different kind of question. Most analysts walk straight to the fourth door, data state, because that is where the work lives, and leave the first two shut. The framework is the corridor drawn out, so you can see which doors you opened and which you walked past.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn corridor with six doors in a row, labelled outcome, decision, current way, data state, constraints, and success and partnership. Each door carries the question that opens it. An analyst figure stands at the fourth door, data state, with the other doors shut, and a dotted path shows the order the framework walks: door one to door six.">
+        <defs>
+          <filter id="s1bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="23" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s1bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s1bAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s1bH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s1bD { font: 800 12px Inter, sans-serif; fill: #075985; }
+          .s1bL { font: 600 11px Inter, sans-serif; fill: #0C1F2E; }
+          .s1bS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s1bB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s1bW { font: 800 12px Inter, sans-serif; fill: #FFFFFF; }
+          .s1bN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s1bH" x="30" y="26">THE CORRIDOR: SIX DOORS, ONE MEETING</text>
+        <text class="s1bS" x="330" y="26">the question on each door is the one that opens it · walk them in order</text>
+
+        <g filter="url(#s1bSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- floor and wall -->
+          <path d="M30 236 L850 236" stroke-width="3"/>
+          <path d="M30 60 L850 60" stroke="#C5D3DF"/>
+          <!-- six doors, 120 wide, 16 gap, from x=40 -->
+          <rect x="40" y="76" width="120" height="160" rx="4" transform="rotate(-0.4 100 156)" fill="#F0F9FF"/>
+          <rect x="176" y="76" width="120" height="160" rx="4" transform="rotate(0.5 236 156)" fill="#F0F9FF"/>
+          <rect x="312" y="76" width="120" height="160" rx="4" transform="rotate(-0.3 372 156)" fill="#F0F9FF"/>
+          <rect x="448" y="76" width="120" height="160" rx="4" transform="rotate(0.4 508 156)" fill="url(#s1bHc)"/>
+          <rect x="584" y="76" width="120" height="160" rx="4" transform="rotate(-0.5 644 156)" fill="#F0F9FF"/>
+          <rect x="720" y="76" width="120" height="160" rx="4" transform="rotate(0.3 780 156)" fill="#F0F9FF"/>
+          <!-- door knobs -->
+          <circle cx="146" cy="160" r="4" fill="#0C1F2E"/>
+          <circle cx="282" cy="160" r="4" fill="#0C1F2E"/>
+          <circle cx="418" cy="160" r="4" fill="#0C1F2E"/>
+          <circle cx="554" cy="160" r="4" fill="#0C1F2E"/>
+          <circle cx="690" cy="160" r="4" fill="#0C1F2E"/>
+          <circle cx="826" cy="160" r="4" fill="#0C1F2E"/>
+          <!-- the analyst at door four -->
+          <circle cx="508" cy="268" r="12" fill="#FBEDE6" stroke="#B0451C"/>
+          <path d="M486 306 C492 286 524 286 530 306" stroke="#B0451C"/>
+          <!-- the walking order, a dotted path along the floor -->
+          <path d="M100 250 L236 250 L372 250 L508 250 L644 250 L780 250" stroke="#0369A1" stroke-dasharray="4 5" marker-end="url(#s1bAr)"/>
+          <!-- door number badges -->
+          <circle cx="60" cy="96" r="11" fill="#0369A1" stroke="#0369A1"/>
+          <circle cx="196" cy="96" r="11" fill="#0369A1" stroke="#0369A1"/>
+          <circle cx="332" cy="96" r="11" fill="#0369A1" stroke="#0369A1"/>
+          <circle cx="468" cy="96" r="11" fill="#B0451C" stroke="#B0451C"/>
+          <circle cx="604" cy="96" r="11" fill="#0369A1" stroke="#0369A1"/>
+          <circle cx="740" cy="96" r="11" fill="#0369A1" stroke="#0369A1"/>
+        </g>
+
+        <text class="s1bW" x="60" y="100" text-anchor="middle">1</text>
+        <text class="s1bW" x="196" y="100" text-anchor="middle">2</text>
+        <text class="s1bW" x="332" y="100" text-anchor="middle">3</text>
+        <text class="s1bW" x="468" y="100" text-anchor="middle">4</text>
+        <text class="s1bW" x="604" y="100" text-anchor="middle">5</text>
+        <text class="s1bW" x="740" y="100" text-anchor="middle">6</text>
+
+        <text class="s1bD" x="78" y="100">Outcome</text>
+        <text class="s1bS" x="50" y="126">If this worked,</text>
+        <text class="s1bS" x="50" y="140">what is different</text>
+        <text class="s1bS" x="50" y="154">in six months?</text>
+        <text class="s1bL" x="50" y="184">the worry behind</text>
+        <text class="s1bL" x="50" y="198">the request</text>
+
+        <text class="s1bD" x="214" y="100">Decision</text>
+        <text class="s1bS" x="186" y="126">Who does what</text>
+        <text class="s1bS" x="186" y="140">with the number,</text>
+        <text class="s1bS" x="186" y="154">and by when?</text>
+        <text class="s1bL" x="186" y="184">the action, the</text>
+        <text class="s1bL" x="186" y="198">person, the deadline</text>
+
+        <text class="s1bD" x="350" y="100">Current way</text>
+        <text class="s1bS" x="322" y="126">How does it</text>
+        <text class="s1bS" x="322" y="140">happen today?</text>
+        <text class="s1bS" x="322" y="154">Show me the file.</text>
+        <text class="s1bL" x="322" y="184">the spec nobody</text>
+        <text class="s1bL" x="322" y="198">wrote down</text>
+
+        <text class="s1bB" x="486" y="100">Data state</text>
+        <text class="s1bS" x="458" y="126">Where do the</text>
+        <text class="s1bS" x="458" y="140">numbers live,</text>
+        <text class="s1bS" x="458" y="154">who can log in?</text>
+        <text class="s1bB" x="458" y="184">where analysts</text>
+        <text class="s1bB" x="458" y="198">start, and stay</text>
+
+        <text class="s1bD" x="622" y="100">Constraints</text>
+        <text class="s1bS" x="594" y="126">What is off</text>
+        <text class="s1bS" x="594" y="140">the table? Budget,</text>
+        <text class="s1bS" x="594" y="154">legal, device.</text>
+        <text class="s1bL" x="594" y="184">the shape of</text>
+        <text class="s1bL" x="594" y="198">a yes</text>
+
+        <text class="s1bD" x="758" y="100">Success</text>
+        <text class="s1bS" x="730" y="126">How will we</text>
+        <text class="s1bS" x="730" y="140">both know, and</text>
+        <text class="s1bS" x="730" y="154">who works with me?</text>
+        <text class="s1bL" x="730" y="184">the test, and</text>
+        <text class="s1bL" x="730" y="198">the partner</text>
+
+        <text class="s1bS" x="548" y="272">stood here for 25 minutes,</text>
+        <text class="s1bS" x="548" y="288">asking about the warehouse</text>
+        <text class="s1bS" x="100" y="272" text-anchor="middle">start here</text>
+
+        <text class="s1bN" x="30" y="342">Doors 1 and 2 are the ones a data person walks past. They are also the ones that decide whether anything gets used.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the hatched door is the one most of us were trained to open first, and it is the fourth</figcaption>
+    </figure>
+
+    <table class="clean">
+      <tr><th>Door</th><th>The question that opens it</th><th>What you walk out with</th><th>A teach-back line to attach</th></tr>
+      <tr><td><strong>1 · Outcome</strong></td><td>If this worked, what would be different in six months? Which outlets keep you up at night?</td><td>The worry the request stands in for. Harbourline: stock-outs of chronic meds in six outlets, and a write-off target of 1.5 percent</td><td>"A dashboard is a tool. I need the outcome, because I can check a tool against an outcome and not the other way round."</td></tr>
+      <tr><td><strong>2 · Decision</strong></td><td>Walk me through Monday morning. Who opens it, what do they do next, by when? When the number is bad, what changes that week?</td><td>The action, the person and the deadline. Harbourline: next week's reorder per outlet, three area managers, Tuesday noon</td><td>"The deadline tells me how fresh the data has to be. Fresher costs more, so I only build fresh where a decision needs it."</td></tr>
+      <tr><td><strong>3 · Current way</strong></td><td>How is it made today? Can you show me the file and tell me who builds it? Where does each number come from, step by step?</td><td>The unwritten spec. Harbourline: Priya, six hours every Monday, an adjustments column nobody can explain</td><td>"The current file is the spec. Every column in it is a decision somebody once made, and I would rather inherit those than guess."</td></tr>
+      <tr><td><strong>4 · Data state</strong></td><td>Which systems does one sale touch? Who can log in and pull an export? Do both countries use the same product codes?</td><td>Sources, owners, access, freshness. Harbourline: one POS vendor, per-outlet CSV, codes that differ by country, one IT person</td><td>"Every hand-off between systems is a place a number can change. I am counting the hand-offs."</td></tr>
+      <tr><td><strong>5 · Constraints</strong></td><td>What is off the table? Budget, time, legal, people. Where do they read it, laptop or phone? When must you show something upward?</td><td>The shape of a yes. Harbourline: no budget until Q1, phones on Monday, a board slide in six weeks</td><td>"I ask for the limits first so I do not propose something you could never approve."</td></tr>
+      <tr><td><strong>6 · Success and partnership</strong></td><td>How will you know it worked, and what would you stop doing? Have you tried this before? Who could spend two hours a week with me?</td><td>The test, the history and the partner. Harbourline: a quiet phone on Monday afternoon, a vendor pilot nobody opened, Priya</td><td>"If we agree on the test now, neither of us has to argue about it later."</td></tr>
+    </table>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Doors 1 and 2: start from the decision, because a number nobody acts on measures nothing<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Douglas Hubbard's definition of measurement is the whole of door 2 in one line: a measurement is <em>a quantitatively expressed reduction of uncertainty based on one or more observations</em>. Uncertainty about what? About a decision. His method begins by defining the decision before anything is counted, and if you cannot name a decision the number will change, you have not found a measurement yet, you have found a chart.</p>
+        <p>So the first door is the outcome and the second is the decision, and they come before any question about data. "What happens on Monday morning" gets you the decision (reorder quantities), the person (three area managers), the deadline (Tuesday noon) and, if you listen, the fact that today the number changes nothing because when it looks bad they phone the outlet. That last fact is worth more than any export schedule. It says the report needs to be different, not faster.</p>
+        <p>Teresa Torres's discovery work puts the same thing in product language: a desired <strong>outcome</strong> sits above the opportunities, which sit above the solutions. A dashboard is a solution. Asking for the outcome first is how you find out what it is a solution to.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Doors 3 and 4: specifics in the past, and "show me the file"<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Rob Fitzpatrick wrote <em>The Mom Test</em> for founders talking to customers, and its three rules transfer whole: talk about their life instead of your idea; ask about specifics in the past instead of generics or opinions about the future; talk less and listen more. His verified line on the second rule is the one to remember: "The world's most deadly fluff is: 'I would definitely buy that.' But folks are wildly optimistic about what they would do in the future." For an analyst, "would you use a daily number?" is that fluff. "Tell me about the last time the report changed a decision" is the past, and the past is where the facts are.</p>
+        <p>Door 3, the current way, is opened by one request: <strong>show me the file.</strong> The Monday Excel is the spec nobody wrote. Every column is a decision somebody made once, the adjustments column is a fudge that encodes a real problem, and the six hours Priya spends are the cost you are being asked to remove. Door 4, data state, is the door analysts open first and should open fourth: which systems a sale touches, who owns each, who can log in, whether Singapore and Malaysia use the same product codes. DalleMule and Davenport's 2017 frame for data strategy asks whether a business needs a single source of truth or several fit-for-purpose versions; Harbourline, with three versions of the stock spreadsheet in circulation, has the second by accident.</p>
+        <p>Taiichi Ohno's five whys belong at door 3 as well. His example walks from a stopped machine through a blown fuse, a dry bearing and a failing pump to a missing strainer. "Why is the report late" walks from Monday to Priya to the POS export to product codes that differ by country. Stop at "Priya is slow" and you build the wrong thing.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Doors 5 and 6: the shape of a yes, and the partner<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Constraints are asked for early because they define what a proposal can look like, not because they are interesting. No budget until Q1 means the first deliverable is built with what exists. Phones on Monday means a table nobody will scroll on a phone is not read. A board in six weeks means one honest number by then beats a suite after it. Malaysian loyalty data under PDPA with a lawyer who takes four weeks means anything touching it is a second phase.</p>
+        <p>Door 6 is two questions. The first is the test: how will you know it worked, and what would you stop doing? Adeline's answer is the best kind, observable and hers: the area managers stop phoning her on Monday afternoon. The second is the partner: who on her side spends two hours a week with you. Torres argues for weekly contact with the people you are building for; the analyst's version is a named person, not a stakeholder group. The person who works with you is the person who can run it after you leave. Fitzpatrick's test for whether a conversation went well is whether the other side gave up something, time, a name, an introduction; Priya, two hours a week, is that something.</p>
+      </div>
+    </details>
+
+    <div class="callout tip">
+      <p><strong>Walk the doors in order the first time.</strong> Session 3 shows what the order is worth: on the bench, the same questions in a shuffled order average 28 points against 48 in door order, and the worst shuffle scores 8. Once you can walk them blind, session 3 also shows which door an analyst should open widest, and it is door 2.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the teach-back line</span>
+      <h2>Why I am asking, in one sentence</h2>
+      <span class="tag concept">4 min live</span>
+    </div>
+    <p class="lede">Every open question in the bank comes with a second sentence: a plain statement of why you are asking it. "The deadline tells me how fresh the data has to be, and fresher costs more." Said out loud, it does three things at once. It makes the question feel like a reason rather than an interrogation, it earns trust, and it teaches the business person one true thing about how data work is decided. By the end of a 45-minute meeting she has learned ten of them, without a slide.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn exchange. On the left the analyst's speech bubble has two parts: the question, when a number looks bad who makes the call and by when, and underneath it the teach-back, the deadline tells me how fresh the data has to be and fresher costs more. Two arrows leave the bubble: one to a fact that comes back from the operations director, reorder due Tuesday noon, and one to a small lesson that stays with her, freshness is a cost, not a default. A third arrow, from a trust meter, rises one notch.">
+        <defs>
+          <filter id="s1cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="37" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s1cHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s1cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s1cH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s1cL { font: 600 11.5px Inter, sans-serif; fill: #0C1F2E; }
+          .s1cS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s1cB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s1cW { font: 800 11.5px Inter, sans-serif; fill: #FFFFFF; }
+          .s1cN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s1cH" x="30" y="26">ONE QUESTION, TWO SENTENCES, THREE THINGS BACK</text>
+
+        <g filter="url(#s1cSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- the analyst's bubble, two-part -->
+          <path d="M40 60 L400 60 L400 176 L120 176 L96 198 L100 176 L40 176 Z" fill="#FFFFFF"/>
+          <path d="M52 118 L388 118" stroke="#C5D3DF" stroke-dasharray="5 4"/>
+          <!-- arrows out -->
+          <path d="M406 90 C460 90 470 76 520 76" marker-end="url(#s1cAr)"/>
+          <path d="M406 150 C460 150 470 176 520 176" marker-end="url(#s1cAr)"/>
+          <!-- the fact that comes back -->
+          <rect x="530" y="52" width="320" height="58" rx="8" transform="rotate(-0.4 690 81)" fill="#F0F9FF"/>
+          <!-- the lesson that stays -->
+          <rect x="530" y="150" width="320" height="50" rx="8" transform="rotate(0.5 690 175)" fill="#FBEDE6" stroke="#B0451C"/>
+          <!-- trust meter -->
+          <rect x="530" y="228" width="200" height="16" rx="8" fill="#FFFFFF" stroke="#C5D3DF"/>
+          <rect x="530" y="228" width="60" height="16" rx="8" fill="url(#s1cHc)"/>
+          <rect x="590" y="228" width="40" height="16" rx="8" fill="#0369A1" stroke="#0369A1"/>
+          <path d="M406 200 C460 200 480 236 520 236" marker-end="url(#s1cAr)"/>
+        </g>
+
+        <text class="s1cB" x="52" y="82">THE QUESTION</text>
+        <text class="s1cL" x="52" y="100">"When a number looks bad, who makes the call, and by when?"</text>
+        <text class="s1cB" x="52" y="140">THE TEACH-BACK</text>
+        <text class="s1cS" x="52" y="158">"The deadline tells me how fresh the data has to be. Fresher</text>
+        <text class="s1cS" x="52" y="172">costs more, so I only build fresh where a decision needs it."</text>
+
+        <text class="s1cL" x="544" y="72">A fact comes back</text>
+        <text class="s1cS" x="544" y="88">"Tuesday noon. And honestly they phone the outlet,</text>
+        <text class="s1cS" x="544" y="102">they don't change the order."</text>
+        <text class="s1cB" x="544" y="170">A lesson stays with her</text>
+        <text class="s1cS" x="544" y="188">freshness is a cost, not a default; weekly is a choice she can defend</text>
+        <text class="s1cS" x="740" y="240">trust, one notch up</text>
+
+        <text class="s1cN" x="30" y="282">The second sentence is why she answers the next question more fully, and the only lesson she takes home.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the terracotta box is the part of the meeting that outlives it</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Plain, true, one sentence, said out loud<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>A teach-back line has three properties. It is <strong>plain</strong>: no word she would have to ask about, so "freshness" not "latency", "the file" not "the extract". It is <strong>true</strong>: a real principle of the craft, not a pleasantry. And it is <strong>one sentence</strong>, because two is a lecture and she stops answering.</p>
+        <p>Three that earn their place in almost any meeting. Before a data-state question: "Every hand-off between systems is a place a number can change, so I am counting the hand-offs." Before a current-way question: "The current file is the spec. Every column is a decision somebody made once, and I would rather inherit those than guess." Before a success question: "If we agree on the test now, neither of us has to argue about it later." Session 4 builds twelve of these and shows how to choose the one concept per meeting that is worth explaining properly.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Five kinds of question, and only one of them earns trust<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Session 3 sorts every question in the bank into five kinds, and the simulator scores them differently. <strong>Open</strong> questions about the past or present uncover facts and earn a point of trust. <strong>Closed</strong> yes-or-no questions are cheap and get you one fact at most. <strong>Vague</strong> questions ("what are your pain points?") cost minutes and get a generic back. <strong>Jargon</strong> costs twice: she has to ask what you mean, and she is a little less sure you understand her shop. <strong>Leading</strong> questions are the dangerous kind: "you'd want this daily, right?" gets a "sure", and a belief that is wrong goes into your notes and later into your build.</p>
+        <p>The trust point is not decoration. On the bench, three of the 24 facts on Adeline's sheet only come out once trust exists, and one of them, that the only IT person is leaving in January, is the one that decides whether anything you build survives the quarter.</p>
+      </div>
+    </details>
+
+    <div class="tryrow" data-fn="wordcount" data-multiline="1" data-title="Write one teach-back line" data-hint="Pick a question you asked a business person this month. Write the sentence you should have said before it: why you were asking, in words they already know. One sentence." data-seed="" data-cta="Count it"></div>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Your Six Doors sheet, for a request you have right now</h2>
+      <span class="tag demo">★ 22 min · everyone writes</span>
+    </div>
+    <p class="lede">One page, six rows. Take a real request from your own inbox, or use Adeline's if you do not have one, and build the sheet you will carry into the meeting. Every line is written before the meeting; the meeting is for listening.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn one-page sheet. At the top, the request as received in the business person's own words. Below, six rows, one per door, each with two open questions written in the past tense and a teach-back line beside each. In the margin, a terracotta mark on the decision row shows the door an analyst opens first, and a pen sits on the page.">
+        <defs>
+          <filter id="s1dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="41" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s1dHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+        </defs>
+        <style>
+          .s1dH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s1dL { font: 700 11px Inter, sans-serif; fill: #0C1F2E; }
+          .s1dS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s1dB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s1dA { font: 700 11px Inter, sans-serif; fill: #0369A1; letter-spacing: .05em; }
+          .s1dN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s1dH" x="30" y="26">THE SHEET, ONE PAGE, WRITTEN BEFORE THE MEETING</text>
+
+        <g filter="url(#s1dSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- the page -->
+          <rect x="60" y="44" width="620" height="236" rx="4" transform="rotate(-0.4 370 162)" fill="#FFFFFF"/>
+          <!-- request box -->
+          <rect x="76" y="56" width="588" height="28" rx="4" fill="url(#s1dHc)"/>
+          <!-- six rows -->
+          <path d="M76 116 L664 116 M76 142 L664 142 M76 168 L664 168 M76 194 L664 194 M76 220 L664 220 M76 246 L664 246 M76 272 L664 272" stroke="#C5D3DF"/>
+          <!-- column rules -->
+          <path d="M190 94 L190 272 M430 94 L430 272" stroke="#C5D3DF" stroke-dasharray="4 4"/>
+          <!-- the mark on the decision row -->
+          <path d="M40 150 L52 162 L70 138" stroke="#B0451C" stroke-width="3"/>
+          <!-- pen -->
+          <path d="M720 70 L800 190" stroke="#0369A1" stroke-width="5"/>
+          <path d="M800 190 L812 208 L796 200 Z" fill="#0369A1" stroke="#0369A1"/>
+        </g>
+
+        <text class="s1dS" x="86" y="75">in their words: "we need a sales dashboard, the Monday report is always late"</text>
+        <text class="s1dA" x="84" y="108">DOOR</text>
+        <text class="s1dA" x="200" y="108">TWO OPEN QUESTIONS, PAST TENSE</text>
+        <text class="s1dA" x="440" y="108">TEACH-BACK, ONE LINE EACH</text>
+        <text class="s1dL" x="84" y="134">1 Outcome</text>
+        <text class="s1dS" x="200" y="134">last time it worked, what changed?</text>
+        <text class="s1dS" x="440" y="134">tools are checked against outcomes</text>
+        <text class="s1dB" x="84" y="160">2 Decision</text>
+        <text class="s1dS" x="200" y="160">walk me through Monday, by when?</text>
+        <text class="s1dS" x="440" y="160">the deadline sets the freshness</text>
+        <text class="s1dL" x="84" y="186">3 Current way</text>
+        <text class="s1dS" x="200" y="186">show me the file. where from?</text>
+        <text class="s1dS" x="440" y="186">the file is the spec</text>
+        <text class="s1dL" x="84" y="212">4 Data state</text>
+        <text class="s1dS" x="200" y="212">which systems? who can log in?</text>
+        <text class="s1dS" x="440" y="212">I am counting the hand-offs</text>
+        <text class="s1dL" x="84" y="238">5 Constraints</text>
+        <text class="s1dS" x="200" y="238">what is off the table? phone?</text>
+        <text class="s1dS" x="440" y="238">limits first, so I propose a yes</text>
+        <text class="s1dL" x="84" y="264">6 Success</text>
+        <text class="s1dS" x="200" y="264">how did you know? who has 2 hours?</text>
+        <text class="s1dS" x="440" y="264">agree the test now, not later</text>
+
+        <text class="s1dB" x="712" y="236">the mark: the door</text>
+        <text class="s1dB" x="712" y="252">your role opens</text>
+        <text class="s1dB" x="712" y="268">first and widest</text>
+
+      </svg>
+      <figcaption>🔍 Click to zoom - twelve questions and twelve second sentences fit on one page, and the meeting is for listening</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>Write the request as it was received, in their words.</strong> Not your translation. If it arrived as "we need a dashboard", write "we need a dashboard". You will want this sentence back at the end of the meeting to see how far the real request was from it.</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · the request</span>Request, verbatim: "We need a sales dashboard. The Monday report is always late and nobody trusts the numbers in it."
+From: Adeline Tan, operations director
+Received: Thursday, by email, forwarded from the regional GM</div>
+      </div>
+      <div class="step">
+        <p><strong>Two open questions per door, in the past or present tense.</strong> "Tell me about the last time", "walk me through", "show me", "where did that come from". Nothing with "would you". Nothing that can be answered with yes. Write them so a person who has never seen a database can answer every one.</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · door 2, decision, two questions</span>Walk me through Monday morning. Who opens the report, and what do they do next?
+When a number looks bad, what changes that week? Who makes the call, and by when?</div>
+        <div class="prompt-box bad"><span class="label">The same door, as it is usually opened</span>What's your refresh SLA on the Monday report?
+Would a daily view be useful?</div>
+      </div>
+      <div class="step">
+        <p><strong>Attach a teach-back line to each question.</strong> Plain, true, one sentence. Read each pair aloud once; if the second sentence has a word she would have to ask about, change the word.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · the pair</span>Q: When a number looks bad, what changes that week? Who makes the call, and by when?
+Why I am asking: The deadline tells me how fresh the data has to be. Fresher costs more, so I only build fresh where a decision needs it.</div>
+      </div>
+      <div class="step">
+        <p><strong>Mark the door your role opens first.</strong> For an analyst it is door 2, decision: your output is a number somebody acts on, so the action, the person and the deadline are the facts you cannot build without. Session 3 measures what that choice is worth. If you are a scientist, an engineer or building with AI, the sibling course for your role marks a different door, and links back here for the corridor.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · the order for tonight</span>2 Decision (widest)  ->  3 Current way  ->  1 Outcome  ->  4 Data state  ->  5 Constraints  ->  6 Success
+Budget: 45 minutes. About ten open questions fit. The sheet has twelve; the last two are spares.</div>
+      </div>
+      <div class="step">
+        <p><strong>Rehearse the opener against Adeline.</strong> Her first line is on the page: "Thanks for coming. We need a sales dashboard." Say your first question out loud, with its teach-back. If it took more than twenty seconds, it is two questions; split it.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · the first thirty seconds</span>Adeline: "Thanks for coming. We need a sales dashboard. The Monday report is always late and honestly nobody trusts the numbers in it."
+You: "Before the dashboard, can I ask about the Monday? Walk me through Monday morning: who opens the report, and what do they do next? I start there because a report is only worth what someone does after reading it."</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Keep the sheet after the meeting.</strong> Session 6 turns a filled-in sheet into the one-page brief you send her within 24 hours, and session 5 turns her answers into three candidate projects. The same page carries all of it.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 2</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Finish the sheet</strong> for your real request: twelve questions, twelve teach-back lines, one mark. Bring it printed; session 3 puts it on the bench.</li>
+      <li><strong>Find the tune.</strong> For the request you chose, write the one sentence you think the business person would say if you asked "what would be different in six months?" Then write the sentence you fear they would say. Both are guesses; the meeting replaces them.</li>
+      <li><strong>Re-read a past request</strong> you built something for, and mark which of the six doors you opened. Most people find two. Write down what you would have learned at each door you skipped.</li>
+      <li><strong>Read the current-way file</strong> for your request if one exists, the Excel or the deck. List every column you cannot explain. Session 2 starts there.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 1 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · Newton's tappers predicted listeners would name about half the songs; listeners named 3 of 120. What does the study say about a discovery meeting?</p>
+      <button class="qopt" type="button">A · Business people are bad at describing what they want</button>
+      <button class="qopt" type="button">B · Analysts should explain their methods more slowly</button>
+      <button class="qopt" type="button">C · Each side hears its own tune behind the other's words and cannot switch it off, so both leave sure they agreed; the fix is questions that make the tune audible, not more vocabulary on either side</button>
+      <button class="qopt" type="button">D · Meetings should be longer than 45 minutes</button>
+      <p class="qwhy">The curse of knowledge runs both ways. Adeline hears "stock-outs" behind "dashboard"; the analyst hears "charts". Neither is careless, and neither notices, which is why the doors are walked in order rather than trusted to instinct.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">2 · Why do the outcome and decision doors come before the data-state door, when the data is where the analyst's work lives?</p>
+      <button class="qopt" type="button">A · Because a number nobody acts on measures nothing: Hubbard's definition ties measurement to reducing uncertainty about a decision, so the decision, the person and the deadline are the facts you cannot build without, and they also decide how fresh and how detailed the data needs to be</button>
+      <button class="qopt" type="button">B · Because business people find data questions boring</button>
+      <button class="qopt" type="button">C · Because the data state never changes and can be asked later</button>
+      <button class="qopt" type="button">D · Because the framework has to have six items and those were the first two</button>
+      <p class="qwhy">At Harbourline, "who makes the call and by when" yields Tuesday noon, three area managers, and the fact that today the number changes nothing. That last fact says the report needs to be different, not faster, and no export schedule would have surfaced it.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">3 · What is the teach-back line, and why is it not just politeness?</p>
+      <button class="qopt" type="button">A · A summary you email after the meeting</button>
+      <button class="qopt" type="button">B · One plain, true sentence on why you are asking, said before the question; it earns trust so the next answer is fuller, and it teaches the business person one real thing about how data work is decided, so by the end of the meeting she has learned ten of them without a slide</button>
+      <button class="qopt" type="button">C · A way of repeating her answer back to check you heard it</button>
+      <button class="qopt" type="button">D · The question rephrased in technical terms</button>
+      <p class="qwhy">On the bench, three of Adeline's 24 facts only surface once trust exists, and one of them, the only IT person leaving in January, decides whether anything built survives the quarter. The second sentence is how trust is built while you are still asking.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Tappers and listeners, about 50 percent predicted, 3 of 120 named</span><span class="note">Elizabeth Newton, "The Rocky Road from Actions to Intentions", PhD dissertation, Stanford, 1990; figures as reported in Chip Heath and Dan Heath, Made to Stick, Random House, 2007, ch. 1. The dissertation itself was not read at source</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The curse of knowledge, the term</span><span class="note">Camerer, Loewenstein and Weber, "The Curse of Knowledge in Economic Settings", Journal of Political Economy 97(5), 1989</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Measurement as a reduction of uncertainty about a decision</span><span class="note">Douglas W. Hubbard, How to Measure Anything, 3rd ed., Wiley, 2014; definition quoted as it appears across summaries, book not opened here</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Specifics in the past, not opinions about the future; the three rules</span><span class="note">Rob Fitzpatrick, The Mom Test, 2013; the quoted line is the verified one, and the "over-optimistic lie" paraphrase that circulates is not his wording</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Outcome before opportunity before solution; weekly contact</span><span class="note">Teresa Torres, Continuous Discovery Habits, 2021; reported from summaries, and taught in depth in the Product Thinking course</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">The analytics translator role</span><span class="note">Henke, Levine and McInerney, Harvard Business Review, 5 Feb 2018; authors and date confirmed, body paywalled, and the headcount figure that circulates is not quoted</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Harbourline and Adeline Tan</span><span class="note">Constructed. Every fact on her sheet is printed in the bench's bank file and is invented to be typical, not sourced</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 1 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Two tunes</b><span>She hears the operational worry behind every word; you hear the machinery. Neither can switch it off.</span></div>
+      <div class="cheat-item"><b>Six Doors, in order</b><span>Outcome · Decision · Current way · Data state · Constraints · Success and partnership.</span></div>
+      <div class="cheat-item"><b>Decision before data</b><span>A number nobody acts on measures nothing. Get the action, the person, the deadline first.</span></div>
+      <div class="cheat-item"><b>Specifics in the past</b><span>"Tell me about the last time", "show me the file". Never "would you".</span></div>
+      <div class="cheat-item"><b>The teach-back line</b><span>Plain, true, one sentence, before the question. Trust up, and she learns one real thing.</span></div>
+      <div class="cheat-item"><b>The analyst's door</b><span>Door 2, decision, opened first and widest. Session 3 counts what that is worth.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Door 4, data state, is the one you know how to open and the one she cannot answer in your words. Session 2 is a five-rung ladder of plain questions that gets the real state of Harbourline's data out of a person who has never seen a schema: which numbers are typed by a person on a Friday, which come out of a till, who owns the product codes, who holds the only login. You draw the data-state map from her answers, and it is the first thing you send her.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 1 of 6 · learn-asking-right-questions-as-da-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="../index.html">← Course home</a> &nbsp;·&nbsp; <a href="02-reading-their-data-state.html">Next: Reading their data state in plain words →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
