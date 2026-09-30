@@ -67,7 +67,7 @@ ROLES = {
             ("04-teaching-while-you-ask.html", "Teaching while you ask", "💬",
              "The one concept worth ninety seconds in an engineer's meeting: most mismatches are timing, not truth. Twelve teach-back lines rewritten for a person who has never heard of a pipeline."),
             ("05-three-projects-starting-with-one-real-copy.html", "Three projects, starting with one real copy", "🌱",
-             "Her pains become three candidates, and the first declares one stock sheet real and replaces Priya's 38 downloads with one script. Why no new tool until a copy is declared."),
+             "Her pains become three candidates, each starting by declaring one copy real, and the winner is a written month-end bridge from the export the bookkeeper already sends: no new tool, no admin login, an answer for the auditor."),
             ("06-the-mock-meeting-and-the-brief.html", "The mock meeting and the one-page brief", "📄",
              "A full run on the bench with your own sheet, scored, then the brief she can read: the lineage as five boxes, the one real copy, the auditor's date. Final scorecard."),
         ],
@@ -184,6 +184,7 @@ def landing(k, r):
     s = s.replace('Learn Asking the Right Questions as a <span class="accent">Data Analyst</span> with Phoebe',
                   f'Learn Asking the Right Questions as {art} <span class="accent">{lab}</span> with Phoebe')
     s = s.replace("learn-asking-right-questions-as-da-with-phoebe", slug)
+    s = s.replace('from "we need a dashboard" to a brief she can read', {"ds": 'from "can we predict it" to a brief she can read', "de": 'from "our numbers never match" to a brief she can read', "ai": 'from "can AI answer the WhatsApps" to a brief she can read'}[k])
     s = s.replace("Learn with Phoebe · Data &amp; Analytics", f"Learn with Phoebe · {r['bucket_name'].replace('&', '&amp;')}")
     # masthead sub, meta and stats
     sub = (f"An operations director says: \"{r['request']}\" It sounds like a technical request, and the {r['lower']} "
@@ -248,7 +249,9 @@ def landing(k, r):
         cut = max(1, len(words) // 2)
         mm["sessions"].append({"label": " ".join(words[:cut]) + "\n" + " ".join(words[cut:]), "href": f"courses/{f}", "color": DIFF[i],
                                "concepts": [{"label": cc, "href": f"courses/{f}"} for cc in r["concepts"][i]]})
-    s = re.sub(r"window\.MINDMAP_DATA = \{.*?\n\};", "window.MINDMAP_DATA = " + json.dumps(mm, ensure_ascii=False, indent=2) + ";", s, count=1, flags=re.S)
+    mm_js = "window.MINDMAP_DATA = " + json.dumps(mm, ensure_ascii=False, indent=2) + ";"
+    # a function replacement: a string replacement would turn json's escaped "\\n" back into a raw newline
+    s = re.sub(r"window\.MINDMAP_DATA = \{.*?\n\};", lambda _m: mm_js, s, count=1, flags=re.S)
     neighbours = {"ds": [("Data Thinking", "learn-data-thinking-with-phoebe"), ("ML Strategy", "learn-ml-strategy-with-phoebe"), ("Decision Intelligence", "learn-decision-intelligence-with-phoebe")],
                   "de": [("Data Pipelines", "learn-data-pipelines-with-phoebe"), ("Data Observability", "learn-data-observability-with-phoebe"), ("Data Orchestration", "learn-data-orchestration-with-phoebe")],
                   "ai": [("AI Red Team", "learn-ai-red-team-with-phoebe"), ("AI Observability", "learn-ai-observability-with-phoebe"), ("Data Thinking", "learn-data-thinking-with-phoebe")]}[k]
@@ -293,8 +296,10 @@ by Phoebe Fu
 
 
 if __name__ == "__main__":
+    import sys
+    parts = sys.argv[1:] or ["brief", "landing", "readme"]
     for k, r in ROLES.items():
-        brief(k, r)
-        landing(k, r)
-        readme(k, r)
-        print("generated", k)
+        if "brief" in parts: brief(k, r)
+        if "landing" in parts: landing(k, r)
+        if "readme" in parts: readme(k, r)
+        print("generated", k, parts)
