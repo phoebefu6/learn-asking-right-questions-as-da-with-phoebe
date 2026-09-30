@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 2 of 6. How to get the real state of a company's data out of a person who has never seen a schema: whether each number was recorded by a machine or typed by a person, a five-rung maturity ladder asked as plain questions, who owns each source and who holds the only login, and the data-state map you send her before any chart.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Reading their data state in plain words - learn asking the right questions as a data analyst with phoebe">
+<meta property="og:description" content="Session 2 of 6. Typed or recorded, five rungs asked in plain words, owners and the one key, and the map you send first.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/courses/02-reading-their-data-state.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reading their data state in plain words - learn asking the right questions as a data analyst with phoebe">
+<meta name="twitter:description" content="Session 2 of 6. Typed or recorded, the five-rung ladder, owners and the one key, the map you send first.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 2 · Reading their data state in plain words - learn asking the right questions as a data analyst with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-asking-right-questions-as-da-with-phoebe</a> / Session 2 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Asking the Right Questions as a Data Analyst with Phoebe · Session 2 of 6</div>
+    <h1>Reading their <span class="accent">data state</span> in plain words</h1>
+    <p class="sub">Door 4 is the one an analyst knows how to open, and the one Adeline cannot answer in your words. She has never seen a schema and does not know what an export is. She does know that the stock number is typed by outlet managers on Friday afternoons, that Kenneth is the only person who can get into the till system, and that the loyalty app belongs to a vendor. Those three things are the data state. Tonight is how to get them out of her in plain words: whether each number was recorded by a machine or typed by a person, a five-rung ladder asked as questions rather than shown as a score, who owns each source and who holds the only key, and the one-page map you draw from her answers and send her before you send a chart. Session 1 walked the corridor; <a href="01-why-the-gap-and-the-six-doors.html">it is here</a> if you need the other five doors.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Core</span>
+      <span class="chip audience">Analysts, and anyone who gets asked for numbers</span>
+      <span class="chip audience">No code. A pen.</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · Typed or recorded, the ladder, the owners</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: the data-state map</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">An analyst asked about data state will ask about systems, and a person who runs 38 pharmacies will hear knocking. The state of Harbourline's data is not a diagram. It is a set of facts about people and habits: a till records, an outlet manager types, a supplier order lives in a chat thread and nowhere else, one person holds the only admin login. Every one of those facts is a plain-words question away, and none of them is a schema question away. The three parts tonight are three kinds of plain question: where each number comes from, how mature the habit around it is, and who can say yes. The build-along turns her answers into a map with boxes she can correct.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> A one-page data-state map for a request you actually have: every number on the report traced to a till, a person or nowhere, an owner and a login holder by name for each source, a rung on the five-rung ladder written beside each one, and the single sentence you send with it. Session 3 puts the same facts on the bench and prices them: the one key on the map is worth 3 points that most meeting orders never reach.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers where each number comes from</span>
+      <h2>Typed by a person, or recorded by a machine</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">The first data-state question is not "what systems do you have". It is "where does this number come from", asked once per number on the Monday report. The answer is always one of three. It was recorded by a system as a side effect of work, like a sale at a till. It was typed by a person, like a stock count on a Friday. Or it is not recorded anywhere, like a supplier order that went over WhatsApp. Those three origins behave differently in a build, and the person in front of you knows which is which without knowing why it matters.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn Monday report page on the left with three numbers on it: sales by outlet, stock on hand, and supplier orders. An arrow traces each number back to its origin on the right. Sales by outlet comes from a till, recorded by a machine. Stock on hand comes from a spreadsheet with a pen beside it, typed by outlet managers on Fridays, drawn in terracotta because it is the number the figure is about. Supplier orders traces to a phone with chat bubbles and a dashed box, because there is no order table anywhere.">
+        <defs>
+          <filter id="s2aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="52" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s2aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s2aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s2aH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s2aL { font: 600 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s2aS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s2aB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s2aV { font: 800 16px Inter, sans-serif; fill: #075985; }
+          .s2aA { font: 700 11px Inter, sans-serif; fill: #0369A1; letter-spacing: .05em; }
+          .s2aN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s2aH" x="30" y="26">EVERY NUMBER ON THE MONDAY REPORT, TRACED TO WHERE IT WAS BORN</text>
+        <text class="s2aS" x="30" y="42">three origins, and only one of them is a machine</text>
+
+        <g filter="url(#s2aSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- the Monday report page -->
+          <rect x="40" y="50" width="290" height="236" rx="4" transform="rotate(-0.4 185 168)" fill="#FFFFFF"/>
+          <rect x="56" y="62" width="258" height="24" rx="3" fill="url(#s2aHc)"/>
+          <path d="M56 130 L314 130 M56 200 L314 200" stroke="#C5D3DF"/>
+          <!-- arrows from each row to its origin -->
+          <path d="M336 112 C420 112 440 96 520 96" marker-end="url(#s2aAr)"/>
+          <path d="M336 170 C420 170 440 186 520 186" stroke="#B0451C" marker-end="url(#s2aAr)"/>
+          <path d="M336 234 C420 234 440 262 520 262" stroke-dasharray="5 4" marker-end="url(#s2aAr)"/>
+          <!-- origin 1: the till -->
+          <rect x="530" y="62" width="320" height="64" rx="8" transform="rotate(-0.5 690 94)" fill="#F0F9FF"/>
+          <rect x="546" y="78" width="30" height="20" rx="2" fill="#FFFFFF"/>
+          <rect x="542" y="100" width="38" height="14" rx="2" fill="#FFFFFF"/>
+          <path d="M552 108 L570 108" stroke="#4A5B6E"/>
+          <!-- origin 2: the spreadsheet and the pen -->
+          <rect x="530" y="150" width="320" height="64" rx="8" transform="rotate(0.5 690 182)" fill="#FBEDE6" stroke="#B0451C"/>
+          <rect x="544" y="164" width="40" height="36" rx="2" fill="#FFFFFF" stroke="#B0451C"/>
+          <path d="M544 176 L584 176 M544 188 L584 188 M557 164 L557 200 M570 164 L570 200" stroke="#B0451C" stroke-width="1"/>
+          <path d="M590 200 L606 168" stroke="#B0451C" stroke-width="4"/>
+          <path d="M590 200 L586 208 L594 204 Z" fill="#B0451C" stroke="#B0451C"/>
+          <!-- origin 3: the phone with chat bubbles, dashed box for nothing recorded -->
+          <rect x="530" y="238" width="320" height="64" rx="8" transform="rotate(-0.4 690 270)" fill="#FFFFFF" stroke-dasharray="6 5"/>
+          <rect x="548" y="248" width="26" height="44" rx="5" fill="#FFFFFF"/>
+          <rect x="580" y="252" width="26" height="12" rx="6" fill="#F0F9FF"/>
+          <rect x="586" y="270" width="26" height="12" rx="6" fill="#F0F9FF"/>
+        </g>
+
+        <text class="s2aA" x="64" y="78">MONDAY REPORT, WEEK 38</text>
+        <text class="s2aL" x="60" y="108">Sales by outlet</text>
+        <text class="s2aV" x="306" y="110" text-anchor="end">412,880</text>
+        <text class="s2aB" x="60" y="166">Stock on hand</text>
+        <text class="s2aV" x="306" y="168" text-anchor="end">3,140 units</text>
+        <text class="s2aS" x="60" y="184">plus an "adjustments" column nobody can explain</text>
+        <text class="s2aL" x="60" y="232">Supplier orders placed</text>
+        <text class="s2aS" x="306" y="234" text-anchor="end">no number</text>
+        <text class="s2aS" x="60" y="268">built by Priya, six hours, every Monday</text>
+
+        <text class="s2aL" x="600" y="86">RECORDED by the till</text>
+        <text class="s2aS" x="600" y="102">a side effect of a sale; one CSV per outlet,</text>
+        <text class="s2aS" x="600" y="116">three years of history, codes differ by country</text>
+        <text class="s2aB" x="620" y="174">TYPED by outlet managers</text>
+        <text class="s2aS" x="620" y="190">Friday afternoons, one shared Excel per outlet,</text>
+        <text class="s2aS" x="620" y="204">three versions in circulation</text>
+        <text class="s2aL" x="626" y="262">NOT RECORDED anywhere</text>
+        <text class="s2aS" x="626" y="278">orders go over WhatsApp;</text>
+        <text class="s2aS" x="626" y="292">there is no order table</text>
+
+        <text class="s2aN" x="30" y="318">One question finds all three: "where do the stock numbers come from, step by step?" Not "what is the source system".</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the terracotta arrow is the number that decides what you can build, because it was typed on a Friday</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The three origins, and the question that finds them<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Take the Monday report and go down it one number at a time. For each, ask the bank's question g08: <strong>"Where do the stock numbers in it come from, step by step?"</strong> with its teach-back said first: "A number that is typed by a person on a Friday behaves differently from one a till records. I need to know which I am dealing with." She does not need to know what a source system is to answer that. She knows that sales come off the till and that stock is what the outlet managers put in the shared Excel on Friday, because she has chased them for it.</p>
+        <p>The three answers carry three different builds. A number <strong>recorded by a system</strong> arrives on its own, with a timestamp, in the same shape every time; at Harbourline that is the POS, one CSV per outlet, three years deep. A number <strong>typed by a person</strong> arrives when the person remembers, in whatever shape they typed, and at Harbourline there are three versions of that shape in circulation and an "adjustments" column nobody can explain. A number that is <strong>not recorded</strong> cannot be built on at all until somebody starts writing it down; supplier orders live in WhatsApp threads and there is no order table anywhere.</p>
+        <p>Say the middle case out loud when you hear it, because it is the one that quietly decides the project. A stock number typed on Friday cannot feed a Monday decision any fresher than Friday, whatever the dashboard refreshes at. It also cannot be trusted more than the person typing it is checked, which at Harbourline is not at all. That one answer tells you the first build is a single agreed stock sheet with a checker, not a chart of the sales.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why data preparation eats the project, quoted as it stands<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Two sources are usually run together into one number, and they should not be. In 2014 Steve Lohr reported in <em>The New York Times</em> that data scientists spend 50 percent to 80 percent of their time collecting and preparing data before it can be explored. In 2016 CrowdFlower's data science survey reported that respondents spent 60 percent of their time cleaning and organising data and a further 19 percent collecting it. The two sources measured two different things with two different methods and gave two different shapes of answer: one a range for collecting and preparing together, the other two separate figures for cleaning and collecting. Quote whichever you use as it stands, and never the "80 percent cleaning" figure that circulates as if it were one measurement, because it is not one anyone made.</p>
+        <p>The point for door 4 is the reason behind both figures. Preparation time is mostly the cost of typed and absent numbers: reconciling three versions of the stock sheet, working out what the adjustments column meant, discovering the order data does not exist. Every minute you spend at door 4 asking "typed or recorded" is a minute you are not spending in week three finding out the hard way.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The adjustments column.</strong> A constructed case, but the column is real in most companies. Harbourline's Monday Excel has a column called "adjustments" that nobody can explain, and it took three questions to find out what it was. Priya adds it because two outlets renamed their SKUs last year without telling anyone, so their stock lines no longer match the POS product codes, and rather than fix the codes she corrects the totals by hand every Monday. The column is not a fudge. It is the product-master problem, written down in the only place anyone would let her write it. Ask "where does this number come from" and the answer is a recorded number, plus a typed correction, plus a naming problem nobody owns, all in one cell.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the maturity ladder as questions</span>
+      <h2>Five rungs, asked in plain words</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Once you know where a number comes from, the next thing is how mature the habit around it is: whether it is made the same way each week, whether anyone wrote that way down, whether anyone checks. DAMA-DMBOK's data management maturity model gives five level names for exactly that. Nobody in a discovery meeting should ever hear the level names. What she hears is five plain questions, one per rung, and what you write down is which rung each source sits on.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 332" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn ladder with five rungs. From the bottom: Initial or ad hoc, Repeatable, Defined, Managed, Optimized, the five DAMA-DMBOK level names. Beside each rung is the plain question that tests for it, from when the number is wrong who fixes it and how do they know, up to has it got better on its own in the last year. A small figure stands at the foot of the ladder and a terracotta arrow marks the point between rung one and rung two where Harbourline's Monday report sits.">
+        <defs>
+          <filter id="s2bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="63" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s2bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s2bAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s2bH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s2bL { font: 600 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s2bS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s2bB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s2bD { font: 800 12px Inter, sans-serif; fill: #075985; }
+          .s2bN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s2bH" x="30" y="26">THE LADDER: FIVE RUNGS, ONE PLAIN QUESTION EACH</text>
+        <text class="s2bS" x="420" y="26">rung names from DAMA-DMBOK; the questions are ours; she only hears the questions</text>
+
+        <g filter="url(#s2bSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- the rails -->
+          <path d="M150 52 L146 300" stroke-width="3"/>
+          <path d="M236 52 L240 300" stroke-width="3"/>
+          <!-- the five rungs, bottom is rung 1 -->
+          <path d="M148 288 L238 288" stroke-width="3"/>
+          <path d="M148 236 L238 236" stroke-width="3"/>
+          <path d="M149 184 L237 184" stroke-width="3"/>
+          <path d="M149 132 L237 132" stroke-width="3"/>
+          <path d="M150 80 L236 80" stroke-width="3"/>
+          <!-- the person at the foot -->
+          <circle cx="66" cy="204" r="12"/>
+          <path d="M44 244 C50 222 82 222 88 244"/>
+          <!-- where Harbourline sits: between rung 1 and rung 2 -->
+          <path d="M94 262 L138 262" stroke="#B0451C" stroke-width="3" marker-end="url(#s2bAr)"/>
+          <rect x="140" y="252" width="98" height="20" rx="4" fill="#FBEDE6" stroke="#B0451C"/>
+          <!-- the question panels -->
+          <rect x="420" y="64" width="430" height="30" rx="6" transform="rotate(-0.3 635 79)" fill="#F0F9FF"/>
+          <rect x="420" y="116" width="430" height="30" rx="6" transform="rotate(0.3 635 131)" fill="#F0F9FF"/>
+          <rect x="420" y="168" width="430" height="30" rx="6" transform="rotate(-0.3 635 183)" fill="#F0F9FF"/>
+          <rect x="420" y="220" width="430" height="30" rx="6" transform="rotate(0.3 635 235)" fill="#F0F9FF"/>
+          <rect x="420" y="272" width="430" height="30" rx="6" transform="rotate(-0.3 635 287)" fill="#F0F9FF"/>
+        </g>
+
+        <text class="s2bD" x="258" y="84">5 Optimized</text>
+        <text class="s2bD" x="258" y="136">4 Managed</text>
+        <text class="s2bD" x="258" y="188">3 Defined</text>
+        <text class="s2bD" x="258" y="240">2 Repeatable</text>
+        <text class="s2bD" x="258" y="292">1 Initial / Ad hoc</text>
+
+        <text class="s2bS" x="432" y="83">"Has it got better on its own in the last year?"</text>
+        <text class="s2bS" x="432" y="135">"Does anyone check afterwards whether it was right?"</text>
+        <text class="s2bS" x="432" y="187">"Is any of it written down?"</text>
+        <text class="s2bS" x="432" y="239">"Does the same person do it the same way every week?"</text>
+        <text class="s2bS" x="432" y="291">"When the number is wrong, who fixes it, and how do they know?"</text>
+
+        <text class="s2bB" x="189" y="266" text-anchor="middle">Harbourline</text>
+        <text class="s2bS" x="66" y="176" text-anchor="middle">Adeline, asked</text>
+        <text class="s2bS" x="66" y="190" text-anchor="middle">five questions</text>
+
+        <text class="s2bN" x="30" y="322">Priya does it the same way every Monday, so it is past rung 1; nothing is written down and nobody checks, so it is not yet rung 2 in full. There is no rung 0.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the terracotta tag is where the Monday report sits, and it is written in your notes, never said to her as a number</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The ladder as questions, not as a score<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>DAMA-DMBOK, 2nd edition, chapter 15, names five levels of data management maturity: <strong>Initial/Ad hoc, Repeatable, Defined, Managed, Optimized</strong>. Five, not six: DMBOK has no level 0, and a "not started" level you may have seen belongs to a different framework. The names are the whole of what is borrowed. The questions beside each rung are ours, written so a person who runs pharmacies can answer them about her own Monday.</p>
+        <p>Rung 1: "when the number is wrong, who fixes it, and how do they know?" If the answer is "Priya notices, usually" the habit is ad hoc. Rung 2: "does the same person do it the same way every week?" Yes, Priya, six hours, from the same export, which is why Harbourline is past the bottom rung. Rung 3: "is any of it written down?" No. There is a spreadsheet with an adjustments column and the method is in Priya's head, which is also why her two weeks of leave in November matter. Rung 4: "does anyone check afterwards whether it was right?" Nobody, which is why nobody trusts it. Rung 5: "has it got better on its own in the last year?" It has got a column longer.</p>
+        <p>Write the rung beside each source in your notes and <strong>never tell her the number</strong>. "You are a 1.5" is a grade, and a grade ends a conversation that was going well. What she hears is five questions that each made her notice something about her own shop, and what you carry out is a per-source reading that tells you where to start: the source on the lowest rung that feeds the biggest decision. The real assessment, with the practices behind each level, is a governance discipline, taught in the <a href="https://phoebefu6.github.io/learn-governance-101-with-phoebe/">Governance 101 course</a>; in a 45-minute discovery meeting the ladder is an interview aid and nothing more.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Two other frames, one line each<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Joe Reis and Matt Housley, in <em>Fundamentals of Data Engineering</em> (2022), describe companies as starting with data, scaling with data or leading with data, reported here from summaries rather than a page. Harbourline is starting with data: one recorded source, one person who assembles it, and a request for a dashboard that is really a request to be able to trust a number. Everything you propose should fit a company at that stage, which rules out most of what a vendor would propose.</p>
+        <p>Leandro DalleMule and Thomas Davenport, in "What's Your Data Strategy?" (<em>Harvard Business Review</em>, 2017, reported), ask whether a company needs a single source of truth or several fit-for-purpose versions of the truth. Harbourline has multiple versions by accident: three stock spreadsheets in circulation, none of them the agreed one. Their frame is useful because it names the choice. A company can decide to run several versions; it should not discover it has.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The Friday rung.</strong> Constructed, and typical. Adeline answered rung 2 with "yes, the outlet managers all update it on Friday", which sounds like Repeatable. The follow-up, "the same way?", got a pause and then "well, some do it Friday morning and some Sunday night, and two of them keep their own copy". That is how three versions come to exist: not through anyone deciding to, but through the same instruction being followed five slightly different ways. The rung question found it in under a minute, and it never came up when the analyst before you asked about the source system.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers owners, access and the one key</span>
+      <h2>Owners, logins, and the one key</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">The last data-state facts are about people: who owns each source, meaning who can say yes to a change or an export, and who can actually log in. At Harbourline nobody owns the product master, which is how two outlets came to rename their SKUs; the loyalty data is owned by an app vendor and an export needs a contract clause; the Malaysian customer data sits under PDPA with a head-office lawyer who takes four weeks to answer anything; and one person, Kenneth, holds the only POS admin login. Kenneth is leaving in January, and she has not told the team.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Harbourline data-state map, hand-drawn. Four source boxes across the top: the POS with a terracotta key labelled Kenneth, the stock spreadsheets in three versions owned by nobody, WhatsApp orders owned by nobody, and the loyalty app with a lock, owned by the vendor. Arrows run from each source down to the Monday report box; the arrows from WhatsApp and the loyalty app are dashed because nothing from them reaches the report.">
+        <defs>
+          <filter id="s2cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="74" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s2cHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s2cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s2cH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s2cL { font: 600 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s2cS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s2cB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s2cW { font: 800 12px Inter, sans-serif; fill: #FFFFFF; }
+          .s2cN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s2cH" x="30" y="26">THE HARBOURLINE DATA-STATE MAP, AS SHE CAN READ IT</text>
+        <text class="s2cS" x="430" y="26">four boxes, an owner or "nobody" on each, one key, one lock</text>
+
+        <g filter="url(#s2cSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- four sources -->
+          <rect x="40" y="60" width="190" height="84" rx="8" transform="rotate(-0.5 135 102)" fill="#F0F9FF"/>
+          <rect x="250" y="60" width="190" height="84" rx="8" transform="rotate(0.4 345 102)" fill="url(#s2cHc)"/>
+          <rect x="460" y="60" width="190" height="84" rx="8" transform="rotate(-0.4 555 102)" fill="#FFFFFF" stroke-dasharray="6 5"/>
+          <rect x="670" y="60" width="190" height="84" rx="8" transform="rotate(0.5 765 102)" fill="#FFFFFF"/>
+          <!-- the one key, on the POS -->
+          <circle cx="204" cy="76" r="7" fill="#FBEDE6" stroke="#B0451C"/>
+          <path d="M210 80 L226 96 M220 90 L216 94 M224 94 L220 98" stroke="#B0451C" stroke-width="3"/>
+          <!-- the lock, on the loyalty app -->
+          <rect x="828" y="82" width="20" height="16" rx="3" fill="#F0F9FF"/>
+          <path d="M832 82 C832 68 844 68 844 82"/>
+          <!-- the Monday report -->
+          <rect x="340" y="222" width="200" height="60" rx="8" transform="rotate(-0.4 440 252)" fill="#FFFFFF"/>
+          <!-- arrows: what reaches the report, and what does not -->
+          <path d="M136 150 C170 200 300 200 360 218" marker-end="url(#s2cAr)"/>
+          <path d="M346 150 C360 180 400 200 420 218" marker-end="url(#s2cAr)"/>
+          <path d="M556 150 C548 168 536 182 522 194" stroke-dasharray="5 4"/>
+          <path d="M514 188 L530 200" stroke-width="2.4"/>
+          <path d="M766 150 C740 176 690 190 640 196" stroke-dasharray="5 4"/>
+          <path d="M638 188 L642 204" stroke-width="2.4"/>
+        </g>
+
+        <text class="s2cL" x="52" y="82">POS, one cloud vendor</text>
+        <text class="s2cS" x="52" y="98">CSV per outlet, 3 years back</text>
+        <text class="s2cS" x="52" y="112">codes differ SG vs MY</text>
+        <text class="s2cB" x="52" y="132">login: Kenneth, only him</text>
+
+        <text class="s2cL" x="262" y="82">Stock spreadsheets, x3</text>
+        <text class="s2cS" x="262" y="98">typed Fridays, 3 versions</text>
+        <text class="s2cS" x="262" y="112">product master: unowned</text>
+        <text class="s2cL" x="262" y="132">owner: nobody</text>
+
+        <text class="s2cL" x="472" y="82">Supplier orders</text>
+        <text class="s2cS" x="472" y="98">WhatsApp threads</text>
+        <text class="s2cS" x="472" y="112">no order table anywhere</text>
+        <text class="s2cL" x="472" y="132">owner: nobody</text>
+
+        <text class="s2cL" x="682" y="82">Loyalty app</text>
+        <text class="s2cS" x="682" y="98">export costs extra</text>
+        <text class="s2cS" x="682" y="112">PDPA, lawyer: 4 weeks</text>
+        <text class="s2cL" x="682" y="132">owner: the vendor</text>
+
+        <text class="s2cL" x="440" y="246" text-anchor="middle">Monday report</text>
+        <text class="s2cS" x="440" y="264" text-anchor="middle">Priya, Excel, six hours</text>
+
+        <text class="s2cB" x="30" y="218">the key leaves in January</text>
+        <text class="s2cB" x="652" y="214">dashed: never reaches the report</text>
+
+        <text class="s2cN" x="30" y="308">Every box has an owner or the word "nobody". She can correct a box. She could never correct a schema.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the terracotta key is one login held by one person who is leaving, and it is the fact the whole build depends on</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Owner means who can say yes<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>"Who owns this data" is a question a business person hears as "whose department is it", which is not the answer you need. The bank's question g13 asks it the usable way: <strong>"What does the loyalty app hold about a customer, and who owns that data?"</strong> with the teach-back "Owned means who can say yes to an export. That is usually a contract, not a login." Said that way, Adeline's answer is exact: the vendor holds it, an export costs extra and needs a clause, and anything with Malaysian customer data goes past the head-office lawyer, who takes four weeks.</p>
+        <p>Ask the same question of every box. Who can say yes to changing a product code? Nobody, which is the answer that explains the renamed SKUs and the adjustments column in one go. Who can say yes to a new column in the stock sheet? Whichever outlet manager opens it first. An unowned source is not a gap in your notes to fill in later. It is the first thing to propose an owner for, and Priya, two hours a week, is the obvious candidate.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The question you ask by name<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Question g11 is short and has to be asked with a name in it: <strong>"Who can log in to the POS back office and pull an export?"</strong> Teach-back: "Access is the first blocker on most data projects, so I ask early and I ask by name." The name is the point. "IT can" is not an answer; "Kenneth can, and only Kenneth" is, and it is the answer that makes you ask what happens in January.</p>
+        <p>That second fact, that Kenneth is leaving and she has not told the team, does not come out on the first question, whatever you ask. On the bench it sits behind the highest trust gate on the sheet: she only volunteers it once four or five open questions with their reasons said aloud have convinced her you are trying to help her and not to audit her. That is why door 4 is the fourth door and not the first. Walk in and ask who holds the admin login before she knows why you are asking, and you get "our IT guy". Ask it after the Monday walk-through and the stock sheet, with the teach-backs in between, and you get the name, the date and the fact she has been carrying alone. Session 3 shows the same thing as a number: the fact is worth 3 points, and most question orders never reach it.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>What the map is for<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The map above is the first thing you send Adeline after the meeting, before any chart, before any proposal. It has four boxes, an owner or the word "nobody" on each, a key, a lock and one target. It contains no word she would have to ask about. She can look at it on her phone on Monday and say "the stock sheet is not three versions, it is four" or "actually Kenneth's deputy also has a login", and that correction is worth more than a week of your building. She could never make the same correction to a schema diagram, because she would not know which box was wrong.</p>
+        <p>The map is also your own honesty check. If a box on it says "nobody", the project has an ownership task before it has a data task. If the only key is on one person, the project has a continuity task before it has a chart. If an arrow is dashed, the number at the end of it cannot be built on until someone starts recording it. A map with those three marks on it is a project plan that she drew, and that is why it goes first.</p>
+      </div>
+    </details>
+
+    <div class="tryrow" data-fn="wordcount" data-multiline="1" data-title="Write the one-key question for your own request" data-hint="For a source you actually need, write the question that gets a person's name back, not a department, and the one plain sentence you would say first about why you are asking. Two sentences." data-seed="" data-cta="Count it"></div>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Draw the data-state map from her answers</h2>
+      <span class="tag demo">★ 22 min · everyone writes</span>
+    </div>
+    <p class="lede">One page, drawn by hand, from answers a business person gave in plain words. Take the request you brought from session 1, or Adeline's if you did not bring one, and build the map you will send her within a day of the meeting. Nothing on it is a schema. Every box is something she can correct.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 306" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A hand-drawn blank map template on a page: four empty dashed boxes across the top for sources, one target box below for the report, and arrows to fill in. The first source box is already filled in for the POS: recorded, login Kenneth, three years back. In the margin to the right, five numbered questions guide the filling: what is on the report, typed recorded or absent, who owns it and who logs in, how far back and who when away, and which box is wrong. A pen rests on the page.">
+        <defs>
+          <filter id="s2dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="85" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s2dHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s2dAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s2dH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s2dL { font: 600 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s2dS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s2dB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s2dA { font: 700 11px Inter, sans-serif; fill: #0369A1; letter-spacing: .05em; }
+          .s2dN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s2dH" x="30" y="26">THE BLANK MAP, WITH THE FIVE QUESTIONS THAT FILL IT</text>
+
+        <g filter="url(#s2dSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- the page -->
+          <rect x="40" y="46" width="570" height="240" rx="4" transform="rotate(-0.4 325 166)" fill="#FFFFFF"/>
+          <!-- four source boxes, the first one filled -->
+          <rect x="58" y="66" width="122" height="74" rx="6" transform="rotate(-0.6 119 103)" fill="#FBEDE6" stroke="#B0451C"/>
+          <rect x="194" y="66" width="122" height="74" rx="6" transform="rotate(0.5 255 103)" stroke="#C5D3DF" stroke-dasharray="5 4"/>
+          <rect x="330" y="66" width="122" height="74" rx="6" transform="rotate(-0.4 391 103)" stroke="#C5D3DF" stroke-dasharray="5 4"/>
+          <rect x="466" y="66" width="122" height="74" rx="6" transform="rotate(0.6 527 103)" stroke="#C5D3DF" stroke-dasharray="5 4"/>
+          <!-- the target -->
+          <rect x="230" y="204" width="180" height="54" rx="6" transform="rotate(0.4 320 231)" fill="url(#s2dHc)"/>
+          <!-- one arrow drawn, three to draw -->
+          <path d="M120 146 C150 190 240 190 280 202" marker-end="url(#s2dAr)"/>
+          <path d="M256 146 L300 202" stroke="#C5D3DF" stroke-dasharray="4 4"/>
+          <path d="M392 146 L340 202" stroke="#C5D3DF" stroke-dasharray="4 4"/>
+          <path d="M528 146 C500 190 400 190 362 202" stroke="#C5D3DF" stroke-dasharray="4 4"/>
+          <!-- margin rule -->
+          <path d="M628 46 L628 286" stroke="#C5D3DF"/>
+        </g>
+
+        <text class="s2dB" x="68" y="86">POS</text>
+        <text class="s2dS" x="68" y="102">recorded, by the till</text>
+        <text class="s2dS" x="68" y="116">login: Kenneth only</text>
+        <text class="s2dS" x="68" y="130">3 years; paper before</text>
+
+        <text class="s2dS" x="255" y="107" text-anchor="middle">source 2</text>
+        <text class="s2dS" x="391" y="107" text-anchor="middle">source 3</text>
+        <text class="s2dS" x="527" y="107" text-anchor="middle">source 4</text>
+        <text class="s2dL" x="320" y="228" text-anchor="middle">the report she asked about</text>
+        <text class="s2dS" x="320" y="246" text-anchor="middle">who builds it, how long it takes</text>
+
+        <text class="s2dA" x="640" y="66">IN THE MARGIN</text>
+        <text class="s2dL" x="640" y="92">1 What is on the report?</text>
+        <text class="s2dL" x="640" y="120">2 Typed, recorded, or absent?</text>
+        <text class="s2dL" x="640" y="148">3 Who owns it? Who can log in?</text>
+        <text class="s2dL" x="640" y="176">4 How far back? Who, when away?</text>
+        <text class="s2dB" x="640" y="204">5 "Which box is wrong?"</text>
+        <text class="s2dS" x="640" y="222">the line you send it with</text>
+
+        <text class="s2dN" x="30" y="300">Four boxes is usually enough. If you need more than six, you are drawing systems, not sources; go back to the report and count the numbers on it.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - one box is filled to show the depth: an origin, a name, a horizon, and nothing she would have to ask about</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>List every number on the report, in her words.</strong> Not the columns you would design; the numbers she reads. If the report does not exist yet, list the numbers she says she wants. Each line on this list becomes an arrow on the map.</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · the numbers on the Monday report</span>1. Sales by outlet, last week
+2. Stock on hand per outlet, plus an "adjustments" column
+3. Which outlets are "down" versus the week before (the GM's Monday question)
+4. Supplier orders placed (she wants this; it is not on the report today)</div>
+      </div>
+      <div class="step">
+        <p><strong>One origin per number: recorded, typed, or absent.</strong> Beside each, write the question that found it, so you can see afterwards which door it came out of and repeat it next time. Say the teach-back first every time; it is the reason she answers the step-by-step version instead of "from the system".</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · origin per number, with the question that found it</span>Sales by outlet      RECORDED   the POS till, CSV per outlet. Found by: "which systems does one sale touch, from the till to head office?"
+Stock on hand        TYPED      outlet managers, Fridays, shared Excel, 3 versions. Found by: "where do the stock numbers come from, step by step?"
+Adjustments column   TYPED      Priya, Mondays, by hand, to correct two outlets' renamed SKUs. Found by: "what goes in this column?" asked three times
+Outlets "down"       DERIVED    Priya compares this week to last in the same Excel. Found by: "show me the file"
+Supplier orders      ABSENT     WhatsApp threads; no order table. Found by: "where would I find last month's orders?"</div>
+      </div>
+      <div class="step">
+        <p><strong>Owner and login per source, by name.</strong> "Owner" means who can say yes to a change or an export. "Login" means who can actually get in. They are often different people, and one of them is often nobody. Write the name or write "nobody"; never write a department.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · owner and login, by name</span>POS                 owner: the vendor, on contract   login: Kenneth (only)   leaving January, team not told
+Stock sheets        owner: nobody                    login: every outlet manager, own copy
+Product master      owner: nobody                    two outlets renamed SKUs themselves last year
+WhatsApp orders     owner: nobody                    the pharmacist's phone in each outlet
+Loyalty app         owner: the app vendor            export costs extra + contract clause; MY data under PDPA, lawyer 4 weeks</div>
+      </div>
+      <div class="step">
+        <p><strong>How far back, and what happens when the person is away.</strong> Two questions per source. The first tells you how much history you can build on. The second finds every single point of failure on the map, and at Harbourline there are two: Priya, on leave for two weeks in November, and Kenneth, gone in January.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · horizon and absence</span>POS            3 years of history; paper before that.       When Kenneth is away: nobody can pull an export. After January: nobody at all.
+Stock sheets   since whenever each outlet started its copy. When a manager is away: that outlet's line is last week's, and nobody notices.
+Monday report  kept as Excel files, one per week.          When Priya is away: no report. Two weeks in November, already booked.
+Loyalty app    the vendor knows.                            When the vendor is slow: four weeks, then the lawyer.</div>
+      </div>
+      <div class="step">
+        <p><strong>Draw the map.</strong> Boxes for sources, one box for the report, arrows for what reaches it today, dashed arrows for what does not. Put the owner or "nobody" in every box, mark the one key, mark the lock. A monospace sketch in an email is fine; a photo of a pen drawing is better, because it looks like something she is allowed to correct.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · the map, as it goes in the email</span>+-----------------+   +------------------+   +----------------+   +----------------+
+| POS (till)      |   | Stock sheets x3  |   | WhatsApp orders|   | Loyalty app    |
+| recorded        |   | typed, Fridays   |   | not recorded   |   | vendor-owned   |
+| login: Kenneth  |   | owner: nobody    |   | owner: nobody  |   | export: clause |
+| [the one key]   |   | codes: unowned   |   |                |   | [lock, PDPA]   |
++--------+--------+   +--------+---------+   +-------+--------+   +-------+--------+
+         |                     |                     :                    :
+         v                     v                     : (nothing)          : (nothing)
+        +---------------------------------------------+
+        | Monday report - Priya, Excel, 6 hours       |
+        +---------------------------------------------+</div>
+      </div>
+      <div class="step">
+        <p><strong>Write the one line you send with it.</strong> Not a summary, not a proposal, not a chart. One sentence that says what the map is and asks her to correct it. Send it within a day, while she still remembers what she told you.</p>
+        <div class="prompt-box good"><span class="label">★ Step 6 · the covering line</span>Hi Adeline, here is what I understood about where your numbers live; which box is wrong?</div>
+        <div class="prompt-box bad"><span class="label">The same email, as it is usually sent</span>Hi Adeline, please find attached a first draft of the source-system architecture and a proposed data model for the sales dashboard. Let me know if you have any questions.</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>Send the map, not a chart, first.</strong> A chart says "I have started building"; a map says "I have started listening". She can correct the map on her phone in a minute, and every correction is a build week you do not lose. Session 6 folds the corrected map into the one-page brief; session 5 uses its "nobody" boxes to pick the first joint project.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 3</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Draw the map for your own request.</strong> Every number on the report, an origin for each, an owner or "nobody" in every box, arrows for what arrives and dashed arrows for what does not. If you cannot fill a box, that is the question you ask next.</li>
+      <li><strong>Find the one key.</strong> Somewhere on your map is a login, a password, a laptop or a person that everything passes through. Mark it. Write down what happens the week that person is away.</li>
+      <li><strong>Write the rung beside each source.</strong> Use the five questions, not the five names. Then mark the source you would move up first, and say why in one line: it should be the lowest rung feeding the biggest decision.</li>
+      <li><strong>Bring the map to session 3.</strong> The bench prices every fact on it, and you will see which of your boxes most meeting orders never fill.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 2 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · Adeline says the stock number is typed into a shared Excel by outlet managers on Friday afternoons. Why does that single answer change what you can build?</p>
+      <button class="qopt" type="button">A · It does not; the dashboard can read an Excel as easily as a database</button>
+      <button class="qopt" type="button">B · A typed number arrives when the person remembers, in whatever shape they typed, and is trusted only as far as it is checked; so the Monday decision can be no fresher than Friday whatever the refresh is, and the first build is one agreed sheet with a checker, not a chart</button>
+      <button class="qopt" type="button">C · It means the number should be moved into the POS system before anything else</button>
+      <button class="qopt" type="button">D · It means the area managers should type it instead of the outlet managers</button>
+      <p class="qwhy">Recorded, typed and absent are three different builds. The typed case is the one that quietly decides the project, and at Harbourline it also explains the three versions in circulation and the adjustments column.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">2 · The maturity ladder is used in the meeting as five plain questions and never shown as a score. How many rungs does it have, and why is the number kept in your notes?</p>
+      <button class="qopt" type="button">A · Six, from level 0 to level 5, and the score is shown so she knows where she stands</button>
+      <button class="qopt" type="button">B · Three, starting, scaling and leading, and the score is sent with the map</button>
+      <button class="qopt" type="button">C · Five, and the number is said out loud so the vendor can quote against it</button>
+      <button class="qopt" type="button">D · Five, Initial/Ad hoc to Optimized as DAMA-DMBOK names them with no level 0; the rung is written beside each source in your notes because a grade ends a conversation that was going well, and the questions themselves are what make her notice her own shop</button>
+      <p class="qwhy">The names are DMBOK's; the questions are ours. What you carry out is a per-source reading that says where to start: the lowest rung feeding the biggest decision. The real assessment belongs to a governance course, not a discovery meeting.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Kenneth holds the only POS login and is leaving in January. Adeline only says so late in the meeting. What does that say about the order of the doors?</p>
+      <button class="qopt" type="button">A · The fact sits behind a trust gate: she volunteers it only once several open questions with their reasons said aloud have shown you are helping her, not auditing her; so door 4 is opened fourth, after the Monday walk-through and the stock sheet, and asked by name</button>
+      <button class="qopt" type="button">B · Access questions should always be asked first, before trust is needed</button>
+      <button class="qopt" type="button">C · It is an HR matter and does not belong on a data-state map</button>
+      <button class="qopt" type="button">D · It shows the meeting should be with Kenneth instead of Adeline</button>
+      <p class="qwhy">Ask who holds the admin login before she knows why you are asking and you get "our IT guy". Ask it fourth, with the teach-backs in between, and you get the name, the date and the fact she has been carrying alone. On the bench it is worth 3 points, and most orders never reach it.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Five maturity level names: Initial/Ad hoc, Repeatable, Defined, Managed, Optimized</span><span class="note">DAMA International, DAMA-DMBOK, 2nd ed., Technics Publications, 2017, ch. 15; reported from summaries. DMBOK has no level 0. The interview question beside each rung is ours, not DAMA's</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">50 percent to 80 percent of time collecting and preparing data</span><span class="note">Steve Lohr, "For Big-Data Scientists, 'Janitor Work' Is Key Hurdle to Insights", The New York Times, 17 Aug 2014; quoted as a range, as printed</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">60 percent cleaning and organising, plus 19 percent collecting</span><span class="note">CrowdFlower, 2016 Data Science Report; two separate figures, never combined with Lohr's range into one number</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Starting with data, scaling with data, leading with data</span><span class="note">Joe Reis and Matt Housley, Fundamentals of Data Engineering, O'Reilly, 2022; reported from summaries, chapter not confirmed so none is cited</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Single source of truth versus multiple versions of the truth</span><span class="note">Leandro DalleMule and Thomas H. Davenport, "What's Your Data Strategy?", Harvard Business Review, May-June 2017; reported, body paywalled</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Harbourline and Adeline Tan</span><span class="note">Constructed. The POS vendor, the Friday stock sheet, the WhatsApp orders, the loyalty vendor, Kenneth and the PDPA lawyer are typical, not sourced; every value is printed in the bench's bank file</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 2 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Three origins</b><span>Recorded by a system, typed by a person, or not recorded anywhere. One question per number: "where does this come from, step by step?"</span></div>
+      <div class="cheat-item"><b>Typed on a Friday</b><span>No fresher than the typing, no more trusted than the checking. The first build is an agreed sheet with a checker.</span></div>
+      <div class="cheat-item"><b>Five rungs, five questions</b><span>Who fixes it · same way each week · written down · checked afterwards · better on its own. Names are DMBOK's; no rung 0.</span></div>
+      <div class="cheat-item"><b>Never the number</b><span>The rung goes in your notes beside each source. A grade ends the conversation; the questions are the lesson.</span></div>
+      <div class="cheat-item"><b>Owner means who can say yes</b><span>To a change or an export. Usually a contract, not a login. Write a name or write "nobody", never a department.</span></div>
+      <div class="cheat-item"><b>The map goes first</b><span>Boxes, owners, one key, one lock, dashed arrows. Sent within a day with one line: "which box is wrong?"</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Session 3 puts every fact on tonight's map on the bench and prices it. Sales from the till, the Friday stock sheet, the unowned product master, the loyalty vendor's lock: each is worth a number of points, and the meeting order decides which of them come out in 45 minutes. The one key, Kenneth's login and his January leaving date, is worth 3 points that most orders never reach, and the session shows exactly which orders do. You also sort the whole question bank by kind, and run your own meeting against Adeline.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 2 of 6 · learn-asking-right-questions-as-da-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="01-why-the-gap-and-the-six-doors.html">← Prev: Why the gap exists, and the Six Doors</a> &nbsp;·&nbsp; <a href="03-the-analysts-questions-and-the-bench.html">Next: The analyst's questions, and the bench →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

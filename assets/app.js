@@ -136,7 +136,7 @@
     var m = crumb.textContent.match(/Session (\d+) of 6/);
     if (m) {
       var current = parseInt(m[1], 10);
-      var pages = ["01-why-the-gap-and-the-six-doors.html", "03-the-analysts-questions-and-the-bench.html"];
+      var pages = ["01-why-the-gap-and-the-six-doors.html", "02-reading-their-data-state.html", "03-the-analysts-questions-and-the-bench.html", "04-teaching-while-you-ask.html", "05-from-pains-to-three-projects.html", "06-the-mock-meeting-and-the-brief.html"];
       var journey = document.createElement("div");
       journey.className = "journey";
       var jl = document.createElement("span");

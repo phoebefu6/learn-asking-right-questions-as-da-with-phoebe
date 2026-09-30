@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 4 of 6. The second sentence on every open question: how the curse of knowledge hides your own jargon from you, why one concept per meeting gets ninety seconds and the rest stay single sentences, and the difference between a lesson and a lecture.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Teaching while you ask - learn asking the right questions as a data analyst with phoebe">
+<meta property="og:description" content="Session 4 of 6. Your curse of knowledge, one concept per meeting, lesson not lecture, and twelve teach-back lines rewritten for a person who runs pharmacies.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/courses/04-teaching-while-you-ask.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Teaching while you ask - learn asking the right questions as a data analyst with phoebe">
+<meta name="twitter:description" content="Session 4 of 6. The second sentence, made plain enough to teach.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-asking-right-questions-as-da-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 4 · Teaching while you ask - learn asking the right questions as a data analyst with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-asking-right-questions-as-da-with-phoebe</a> / Session 4 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn Asking the Right Questions as a Data Analyst with Phoebe · Session 4 of 6</div>
+    <h1>Teaching <span class="accent">while you ask</span></h1>
+    <p class="sub">Every open question on your sheet has a second sentence: why you are asking, said out loud. Session 1 showed what it does, trust up and one true thing learned. Tonight is about the sentence itself, because the version most analysts write is true and useless. "The refresh cadence sets the latency budget" is a correct principle that teaches Adeline nothing, since three of its words are words she would have to ask about, and she will not ask. She will nod. The work of this session is making twelve second sentences plain enough that a person who runs pharmacies learns one real thing from each, without anyone giving a lecture.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Core</span>
+      <span class="chip audience">Analysts, and anyone who gets asked for numbers</span>
+      <span class="chip audience">No code. A pen.</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Welcome</span>
+      <span class="a2" style="flex:4">3-18 · The curse, one concept, lesson not lecture</span>
+      <span class="a3" style="flex:5">18-40 · Build-along: twelve lines, rewritten</span>
+      <span class="a4" style="flex:1">40-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where we start</h2>
+    </div>
+    <p class="lede">You have a sheet with twelve open questions and twelve teach-back lines on it, and session 3 put it on the bench. The questions are fine. The second sentences are the problem, because you wrote them in the vocabulary you think in, and you cannot hear that from the inside. Adeline Tan, operations director of Harbourline, a constructed chain of 38 outlets, is the reader tonight. The aim is narrow: by the end of a 45-minute meeting she can repeat one idea about data work to her boss in her own words, and the other eleven have quietly landed as single sentences she did not have to stop and decode. The Communication course owns presenting and influence; this is only the sentence you say before a question.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+      <span class="pill">★ Build-along = write it yourself</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> Your twelve teach-back lines rewritten with every word she would have to ask about replaced, each still one sentence; one concept chosen for the meeting with its ninety-second version written in three plain sentences; and the sentence you hope she says to her boss on Tuesday. Session 5 takes the same sheet and turns her answers into three joint projects.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers why you cannot hear your own jargon</span>
+      <h2>Your curse of knowledge, not hers</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">In 1989 Camerer, Loewenstein and Weber showed that better-informed people cannot fully set their information aside when predicting what less-informed people will understand, and named it the curse of knowledge. The <a href="https://phoebefu6.github.io/learn-tech-writing-with-phoebe/courses/01-why-docs-fail.html">Tech Writing course teaches it in depth</a>, with what it does to documentation. The analyst's version is smaller and sharper: a teach-back line written in the analyst's own words. "The refresh cadence sets the latency budget" is tapping. The analyst hears the whole tune, cadence, latency, extract, and judges the line clear from inside that experience. Adeline hears three knocks and a word she recognises.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="One teach-back line drawn twice. The top panel reads: refresh cadence sets the latency budget, so the extract runs as often as the decision does; the words cadence, latency and extract are circled in terracotta as the three she would have to ask about. The bottom panel is the same claim in plain words: how often the number changes, how fresh it must be for Tuesday noon, and the Monday file I pull from. Arrows run from each circled word to its replacement. At the right a small figure of the operations director says sorry, what do you mean.">
+        <defs>
+          <filter id="s4aSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="53" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4aHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s4aAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s4aH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s4aL { font: 600 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s4aS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s4aB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s4aN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s4aH" x="30" y="26">ONE LINE, DRAWN TWICE</text>
+        <text class="s4aS" x="230" y="26">the claim does not change; the three words she would have to ask about do</text>
+
+        <g filter="url(#s4aSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- before panel -->
+          <rect x="40" y="50" width="760" height="86" rx="6" transform="rotate(-0.3 420 93)" fill="#FFFFFF"/>
+          <!-- the three circled words -->
+          <ellipse cx="142" cy="82" rx="34" ry="14" stroke="#B0451C"/>
+          <ellipse cx="268" cy="82" rx="34" ry="14" stroke="#B0451C"/>
+          <ellipse cx="436" cy="82" rx="34" ry="14" stroke="#B0451C"/>
+          <!-- after panel -->
+          <rect x="40" y="200" width="760" height="86" rx="6" transform="rotate(0.4 420 243)" fill="#F0F9FF"/>
+          <!-- arrows from each circled word to its replacement -->
+          <path d="M142 98 C142 150 150 170 150 222" stroke="#B0451C" marker-end="url(#s4aAr)"/>
+          <path d="M268 98 C280 150 380 170 400 222" stroke="#B0451C" marker-end="url(#s4aAr)"/>
+          <path d="M436 98 C470 150 630 170 660 222" stroke="#B0451C" marker-end="url(#s4aAr)"/>
+          <!-- the replacements, underlined in terracotta -->
+          <path d="M60 242 L262 242" stroke="#B0451C"/>
+          <path d="M272 242 L536 242" stroke="#B0451C"/>
+          <path d="M548 242 L770 242" stroke="#B0451C"/>
+          <!-- Adeline, listening -->
+          <circle cx="836" cy="158" r="10"/>
+          <path d="M818 190 C822 174 850 174 854 190"/>
+        </g>
+
+        <text class="s4aB" x="52" y="66">BEFORE, IN THE ANALYST'S WORDS</text>
+        <text class="s4aL" x="60" y="86">Refresh</text>
+        <text class="s4aL" x="118" y="86">cadence</text>
+        <text class="s4aL" x="178" y="86">sets the</text>
+        <text class="s4aL" x="244" y="86">latency</text>
+        <text class="s4aL" x="304" y="86">budget, so the</text>
+        <text class="s4aL" x="412" y="86">extract</text>
+        <text class="s4aL" x="472" y="86">runs as often as the decision does.</text>
+        <text class="s4aS" x="300" y="66">three words she would ask about; she nods instead</text>
+
+        <text class="s4aS" x="700" y="150">"sorry, what</text>
+        <text class="s4aS" x="700" y="164">do you mean?"</text>
+
+        <text class="s4aB" x="52" y="216">AFTER, IN HERS</text>
+        <text class="s4aL" x="60" y="236">how often the number changes,</text>
+        <text class="s4aL" x="272" y="236">how fresh it must be for Tuesday noon,</text>
+        <text class="s4aL" x="548" y="236">and the Monday file I pull from.</text>
+        <text class="s4aS" x="60" y="272">same claim, no word to ask about, still one sentence; she learns that fresh is a choice with a price</text>
+
+        <text class="s4aN" x="30" y="316">The circled words were invisible to the person who wrote the line. Reading it aloud to someone else is the only way to see them.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the top line is correct and the bottom line is the same line; only the bottom one teaches her anything</figcaption>
+    </figure>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The words she would have to ask about<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Take any teach-back line on your sheet and read it aloud to someone who does not do data work. Any word that makes them say "sorry, what do you mean?" is a jargon cost, and session 3's bench prices it exactly: the question takes five minutes instead of three, because you have to explain, and it costs a point of trust, because she is a little less sure you understand her shop. The line was meant to earn trust. With one wrong word it spends it.</p>
+        <p>The usual offenders, with the plain word that replaces each. <strong>Pipeline</strong>: the steps a number goes through from the till to the report. <strong>Extract</strong>: the file we pull out of the system. <strong>Schema</strong>: the list of columns and what each one means. <strong>Latency</strong>: how old the number is by the time you see it. <strong>Granularity</strong>: per outlet, per product, or per sale, whichever is the smallest thing we count. <strong>Join</strong>: matching two files on something they share, like a product code. <strong>Warehouse</strong>: the one place all the copies are kept. <strong>SLA</strong>: the promise about when it arrives. None of the plain versions is longer than a breath, and every one of them is a thing she already knows exists.</p>
+        <p>The test is not "would a smart person understand this". Adeline is a smart person. The test is whether the word is one she uses at work, and the honest way to find out is her face, which is why the reading is done aloud and never on paper.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Why plain is not dumbed down<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Douglas Hubbard's definition of measurement, a quantitatively expressed reduction of uncertainty based on one or more observations, is itself a plain sentence. It contains no term of art. It is the most-quoted line in a book about measuring the things people say cannot be measured, and a finance director can check it against her own experience without a glossary. Precision and plainness are not in tension; the words that sound precise to an analyst are usually just familiar.</p>
+        <p>There is a professional reason plain is the norm and not a courtesy. The person paying for the work has to be able to check it. A teach-back line she cannot decode is a claim she cannot test, and a claim she cannot test is one she either accepts on faith or quietly ignores. Both are bad for you: the first because faith runs out on the first wrong number, the second because you have spent a sentence and taught nothing. Plain words are how a data person makes their reasoning inspectable by the person who has to sign it off.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The nod that cost six weeks.</strong> A constructed case, and a common shape. An analyst told Adeline "we will need to denormalise the stock feed", watched her nod, and moved on. Six weeks later, reviewing the first cut of the report, she asked when the stock numbers were coming back. She had taken "denormalise" to mean the stock figures would be removed for now, and had been waiting politely for them to return. Nobody lied and nobody was careless. A word the analyst could not hear as jargon went past a person too polite to stop the meeting, and the belief it left behind was not visible until a build had been made on top of it.</p>
+    </div>
+
+    <div class="tryrow" data-fn="wordcount" data-multiline="1" data-title="Rewrite one of your lines" data-hint="Take a teach-back line from your session 1 sheet. Circle every word Adeline would have to ask about, then write the line again with each one replaced. It must still be one sentence." data-seed="" data-cta="Count it"></div>
+  </section>
+
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the one idea that gets explained properly</span>
+      <h2>One concept per meeting</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Twelve teach-back lines, and she will remember one. That is not a failure of the other eleven; single sentences land as background, and background is what most of them should be. But one idea per meeting deserves ninety seconds of proper explanation: what it is, why it costs, what it means for her Monday. The choice is not the idea you find most interesting. It is the idea a false belief would attach to if you left it unexplained, because that belief is the one that turns into a wrong build.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Twelve small cards in a row along the bottom, numbered one to twelve, two per door. The fourth slot is empty and dashed; an arrow rises from it to one enlarged terracotta card above, which carries the concept freshness is a cost, weekly is a choice, written as its ninety-second version in three plain sentences: what it is, why it costs, what it means for her Monday. A pen rests beside the enlarged card.">
+        <defs>
+          <filter id="s4bSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="59" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4bHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s4bAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s4bH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s4bL { font: 600 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s4bS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s4bB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s4bV { font: 800 16px Inter, sans-serif; fill: #075985; }
+          .s4bN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s4bH" x="30" y="26">TWELVE LINES, ONE PULLED OUT</text>
+        <text class="s4bS" x="250" y="26">eleven stay single sentences; one gets ninety seconds, and it is the one a false belief would attach to</text>
+
+        <g filter="url(#s4bSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- the enlarged card -->
+          <rect x="180" y="52" width="560" height="140" rx="8" transform="rotate(-0.5 460 122)" fill="#FBEDE6" stroke="#B0451C"/>
+          <!-- arrow from the gap up to the card -->
+          <path d="M254 250 C254 232 300 220 340 200" stroke="#B0451C" marker-end="url(#s4bAr)"/>
+          <!-- the deck: twelve slots, 56 wide, 6 gap, from x=40 -->
+          <rect x="40" y="256" width="56" height="76" rx="4" transform="rotate(-0.8 68 294)" fill="#FFFFFF"/>
+          <rect x="102" y="256" width="56" height="76" rx="4" transform="rotate(0.6 130 294)" fill="#FFFFFF"/>
+          <rect x="164" y="256" width="56" height="76" rx="4" transform="rotate(-0.5 192 294)" fill="#FFFFFF"/>
+          <rect x="226" y="256" width="56" height="76" rx="4" stroke="#B0451C" stroke-dasharray="5 4"/>
+          <rect x="288" y="256" width="56" height="76" rx="4" transform="rotate(0.7 316 294)" fill="#FFFFFF"/>
+          <rect x="350" y="256" width="56" height="76" rx="4" transform="rotate(-0.6 378 294)" fill="#FFFFFF"/>
+          <rect x="412" y="256" width="56" height="76" rx="4" transform="rotate(0.5 440 294)" fill="#FFFFFF"/>
+          <rect x="474" y="256" width="56" height="76" rx="4" transform="rotate(-0.9 502 294)" fill="#FFFFFF"/>
+          <rect x="536" y="256" width="56" height="76" rx="4" transform="rotate(0.8 564 294)" fill="#FFFFFF"/>
+          <rect x="598" y="256" width="56" height="76" rx="4" transform="rotate(-0.4 626 294)" fill="#FFFFFF"/>
+          <rect x="660" y="256" width="56" height="76" rx="4" transform="rotate(0.6 688 294)" fill="#FFFFFF"/>
+          <rect x="722" y="256" width="56" height="76" rx="4" transform="rotate(-0.7 750 294)" fill="#FFFFFF"/>
+          <!-- a line of text on each small card -->
+          <path d="M50 306 L86 306 M112 306 L148 306 M174 306 L210 306 M298 306 L334 306 M360 306 L396 306 M422 306 L458 306 M484 306 L520 306 M546 306 L582 306 M608 306 L644 306 M670 306 L706 306 M732 306 L768 306" stroke="#C5D3DF"/>
+          <path d="M50 318 L78 318 M112 318 L140 318 M174 318 L202 318 M298 318 L326 318 M360 318 L388 318 M422 318 L450 318 M484 318 L512 318 M546 318 L574 318 M608 318 L636 318 M670 318 L698 318 M732 318 L760 318" stroke="#C5D3DF"/>
+        </g>
+
+        <text class="s4bB" x="196" y="76">THE ONE: FRESHNESS IS A COST, WEEKLY IS A CHOICE</text>
+        <text class="s4bS" x="196" y="100">What it is: how often the number is remade is a decision, not a default.</text>
+        <text class="s4bS" x="196" y="122">Why it costs: daily means a daily export, a daily check, and a person every day.</text>
+        <text class="s4bS" x="196" y="144">Your Monday: reorder is due Tuesday noon, so weekly is right and daily is waste.</text>
+        <text class="s4bB" x="196" y="174">ninety seconds, three sentences, and the "you'd want this daily, right?" belief never forms</text>
+
+        <text class="s4bV" x="68" y="284" text-anchor="middle">1</text>
+        <text class="s4bV" x="130" y="284" text-anchor="middle">2</text>
+        <text class="s4bV" x="192" y="284" text-anchor="middle">3</text>
+        <text class="s4bB" x="254" y="284" text-anchor="middle">4</text>
+        <text class="s4bV" x="316" y="284" text-anchor="middle">5</text>
+        <text class="s4bV" x="378" y="284" text-anchor="middle">6</text>
+        <text class="s4bV" x="440" y="284" text-anchor="middle">7</text>
+        <text class="s4bV" x="502" y="284" text-anchor="middle">8</text>
+        <text class="s4bV" x="564" y="284" text-anchor="middle">9</text>
+        <text class="s4bV" x="626" y="284" text-anchor="middle">10</text>
+        <text class="s4bV" x="688" y="284" text-anchor="middle">11</text>
+        <text class="s4bV" x="750" y="284" text-anchor="middle">12</text>
+        <text class="s4bS" x="254" y="322" text-anchor="middle">pulled</text>
+
+        <text class="s4bN" x="30" y="350">1-2 outcome · 3-4 decision · 5-6 current way · 7-8 data state · 9-10 constraints · 11-12 success. The other eleven stay one sentence each.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the pulled card is the only one that gets three sentences, and it is chosen by the belief it prevents</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Choosing the one<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Look at the five false beliefs the bench can record on the fast run, because each one is a concept that was never explained. "Needs a daily refresh" attaches to freshness. "Stock levels come from the POS" attaches to typed versus recorded. "Product-level detail for the area managers" attaches to the smallest thing you count. "A dashboard is the deliverable" attaches to tool versus outcome. "Everyone reads it on a laptop" attaches to the device deciding the design. Pick the belief most likely to form in <em>this</em> meeting with <em>this</em> person, and the concept behind it is your one.</p>
+        <p>For Harbourline there are two honest candidates. <strong>Freshness is a cost, weekly is a choice</strong>, because "you'd want this daily, right?" is the belief waiting to happen the moment anyone says the report is late, and it is the costliest habit in the bank once built. Or <strong>typed versus recorded</strong>, because she assumes stock is in the POS, it is in a Friday spreadsheet with three versions, and every stock number in the build inherits that. Either is right. Choose one, not both; two concepts in ninety seconds each is a lecture with an interval.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The ninety-second version<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Three sentences, in a fixed order: what it is, why it costs, what it means for her Monday. Written in full for the freshness concept, as it would be said after "if the numbers arrived a day earlier, what would you do differently?" and her answer of "honestly, nothing":</p>
+        <p><strong>What it is.</strong> "How often a number is remade is a choice we make, not something the computer decides; the report can be rebuilt every day, every week, or every month, and the number is only as fresh as the last rebuild." <strong>Why it costs.</strong> "Every rebuild is an export, a check that nothing broke, and a person to do the checking, so a daily number is five times the work of a weekly one and five times the chances of a wrong number slipping through." <strong>Her Monday.</strong> "Your reorder is due Tuesday noon and the area managers decide once a week, so a weekly number that is right on Monday morning is the correct one, and I would rather spend the saved time making it trustworthy than making it daily."</p>
+        <p>Ninety seconds, then back to the next question. The tell that it worked is that she uses the word "weekly" as a choice later in the meeting, rather than as an apology.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>The test that she could repeat it to her boss<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>The regional GM asks Adeline on Tuesday what the data person said. If the one concept landed, she can say something like "the report is weekly on purpose; daily would cost five times the work and nobody decides daily." That sentence is the whole test: it is hers, it is short, it carries the reason, and it would survive a sceptical follow-up. If instead she says "they talked about refresh rates", the concept was heard and not learned.</p>
+        <p>Write the sentence you hope she says before the meeting. It forces the ninety seconds to be built backwards from a line a non-data person could carry, and it is the cheapest rehearsal there is. It also tells you something about the choice itself: if you cannot write a one-line version a GM would repeat, you have picked an idea that matters to you and not to her.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The wrong one.</strong> Constructed. An analyst chose "the product master is the naming problem before the data problem" as the concept for Adeline's meeting, explained it well, and she repeated it perfectly. Two weeks later the first cut of the report was daily, because nobody had said out loud that weekly was a choice, and "you'd want this daily" had gone unchallenged in minute six. The concept she learned was true. It was the wrong one for that meeting, because no false belief was waiting to attach to it.</p>
+    </div>
+  </section>
+
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the difference between teaching and talking</span>
+      <h2>Lesson, not lecture</h2>
+      <span class="tag concept">4 min live</span>
+    </div>
+    <p class="lede">A teach-back line passes three tests: plain, true, one sentence. The third is the one analysts fail, because the moment a line gets interesting it wants a second sentence, and then a third. The tell of a lecture is easy to hear from across the room: she stops answering and starts nodding. Rob Fitzpatrick's third rule for talking to customers is the whole discipline in five words, talk less and listen more, and it applies with extra force to the person who is supposedly asking the questions.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two hand-drawn 45-minute timelines, constructed illustrations and not measurements. The top rail, labelled lecture, is mostly a long hatched bar of the analyst talking with short white gaps. The bottom rail, labelled lesson, is mostly white stretches of the operations director talking, interrupted by short terracotta ticks, one per teach-back line. Minute marks at 0, 15, 30 and 45 sit under both rails.">
+        <defs>
+          <filter id="s4cSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="67" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4cHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+          <marker id="s4cAr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#0C1F2E" stroke-width="1.6" stroke-linecap="round"/></marker>
+        </defs>
+        <style>
+          .s4cH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s4cL { font: 600 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s4cS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s4cB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s4cA { font: 700 11px Inter, sans-serif; fill: #0369A1; }
+          .s4cN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s4cH" x="30" y="26">TWO MEETINGS, 45 MINUTES EACH</text>
+        <text class="s4cS" x="270" y="26">hatched is the analyst talking; white is her talking; terracotta is a teach-back line · drawn, not measured</text>
+
+        <g filter="url(#s4cSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- clock anchor -->
+          <circle cx="52" cy="112" r="14"/>
+          <path d="M52 112 L52 102 M52 112 L59 116"/>
+          <!-- top rail: lecture -->
+          <rect x="80" y="86" width="720" height="40" rx="4" transform="rotate(-0.3 440 106)" fill="#FFFFFF"/>
+          <rect x="82" y="88" width="176" height="36" fill="url(#s4cHc)" stroke="none"/>
+          <rect x="274" y="88" width="198" height="36" fill="url(#s4cHc)" stroke="none"/>
+          <rect x="488" y="88" width="214" height="36" fill="url(#s4cHc)" stroke="none"/>
+          <rect x="716" y="88" width="82" height="36" fill="url(#s4cHc)" stroke="none"/>
+          <!-- bottom rail: lesson -->
+          <rect x="80" y="196" width="720" height="40" rx="4" transform="rotate(0.4 440 216)" fill="#FFFFFF"/>
+          <rect x="94" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="158" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="222" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="286" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="350" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="414" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="478" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="542" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="606" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="670" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <rect x="734" y="198" width="6" height="36" fill="#B0451C" stroke="#B0451C"/>
+          <!-- minute marks -->
+          <path d="M80 132 L80 140 M320 132 L320 140 M560 132 L560 140 M800 132 L800 140" stroke="#4A5B6E"/>
+          <path d="M80 242 L80 250 M320 242 L320 250 M560 242 L560 250 M800 242 L800 250" stroke="#4A5B6E"/>
+        </g>
+
+        <text class="s4cL" x="80" y="72">LECTURE</text>
+        <text class="s4cS" x="150" y="72">she stops answering and starts nodding; the gaps are her saying "right"</text>
+        <text class="s4cA" x="80" y="154" text-anchor="middle">0 min</text>
+        <text class="s4cA" x="320" y="154" text-anchor="middle">15</text>
+        <text class="s4cA" x="560" y="154" text-anchor="middle">30</text>
+        <text class="s4cA" x="800" y="154" text-anchor="middle">45</text>
+
+        <text class="s4cB" x="80" y="182">LESSON</text>
+        <text class="s4cS" x="140" y="182">she talks; each tick is one plain sentence before a question, and the long white stretches are the facts arriving</text>
+        <text class="s4cA" x="80" y="264" text-anchor="middle">0 min</text>
+        <text class="s4cA" x="320" y="264" text-anchor="middle">15</text>
+        <text class="s4cA" x="560" y="264" text-anchor="middle">30</text>
+        <text class="s4cA" x="800" y="264" text-anchor="middle">45</text>
+
+        <text class="s4cN" x="30" y="290">Both rails are constructed illustrations of a shape, not recordings of a meeting. The shape is the point: teaching happens in the ticks.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - constructed, not measured; the lesson rail is mostly white because most of a good meeting is her talking</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Plain, true, one sentence<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Failing</strong>, before "who can log in to the POS back office and pull an export?": "Access provisioning is typically the critical-path dependency on data projects because credential ownership sits with IT, and if the admin account is a single point of failure we would want to get a service account issued before any ETL is scoped." True, and it fails all three tests at once: four words she would ask about, two claims joined into one, and a second sentence hiding inside the first.</p>
+        <p><strong>Passing</strong>, same question: "Access is the first blocker on most data projects, so I ask early and I ask by name." Plain, because every word is one she uses; true, because it is a real principle of how these projects fail; one sentence, so she is answering again within three seconds. The failing version would have earned a nod. The passing version earned the name Kenneth, and later, once trust had been built, the fact that he is leaving in January.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>When she asks a follow-up, you have a lesson<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>There is only one proof that a line taught something, and it is a follow-up question from her. "So if we went daily, who would do the checking?" means freshness landed as a cost. "Wait, so the stock file is not from the till?" means typed versus recorded landed. A nod proves nothing, and a polite "makes sense" proves slightly less than nothing, because it closes the topic. Silence after a teach-back line is a reason to ask your next question, not to add a sentence.</p>
+        <p>On the bench this is the mechanism, not a metaphor. Every open question earns a point of trust, and the sensitive facts on her sheet sit behind trust gates she will not cross unprompted. The teach-back line is where that point is earned: she answers the next question more fully because the last one came with a reason. A lecture spends minutes and earns nothing, which is the same arithmetic as the jargon opener in session 3 with a friendlier face.</p>
+      </div>
+    </details>
+
+    <div class="callout example">
+      <span class="ex-pill">Real world</span>
+      <p><strong>The follow-up that changed the build.</strong> Constructed. After "a number typed by a person on a Friday behaves differently from one a till records, and I need to know which I am dealing with", Adeline asked: "so the Friday stock sheet is the weak one, not the sales?" That question was the lesson landing and the project changing shape in the same breath. It moved the first piece of work from a sales chart to a single owned stock file, which is where session 5 will find it.</p>
+    </div>
+  </section>
+
+  <section class="section" id="demo-1">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Rewrite your twelve lines for Adeline</h2>
+      <span class="tag demo">★ 22 min · everyone writes</span>
+    </div>
+    <p class="lede">The sheet from session 1, teach-back column only. Twelve lines go in as you wrote them and come out with every word she would have to ask about replaced, still one sentence each. Then one is chosen and given its ninety seconds. If you did not bring a sheet, the twelve lines from the bank are printed in step 1 and they need the same work; several of them were written by an analyst too.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The session 1 sheet redrawn with the teach-back column made wide. Three rows are shown, each with the line as first written in muted text and struck through, and the rewritten plain line beneath it in ink. The first row, the decision door, carries a terracotta mark in the margin as the chosen concept, freshness is a cost. A pen rests at the right edge of the page.">
+        <defs>
+          <filter id="s4dSk" x="-3%" y="-3%" width="106%" height="106%"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" seed="71" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G"/></filter>
+          <pattern id="s4dHc" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(-38)"><line x1="0" y1="0" x2="0" y2="7" stroke="#0369A1" stroke-width="1" opacity=".5"/></pattern>
+        </defs>
+        <style>
+          .s4dH { font: 800 12px Inter, sans-serif; fill: #0C1F2E; }
+          .s4dL { font: 700 11px Inter, sans-serif; fill: #0C1F2E; }
+          .s4dS { font: 400 11px Inter, sans-serif; fill: #4A5B6E; }
+          .s4dB { font: 800 11px Inter, sans-serif; fill: #7F3012; }
+          .s4dA { font: 700 11px Inter, sans-serif; fill: #0369A1; letter-spacing: .05em; }
+          .s4dN { font: 400 12px Inter, sans-serif; fill: #4A5B6E; }
+        </style>
+
+        <text class="s4dH" x="30" y="26">THE SHEET AGAIN, TEACH-BACK COLUMN WIDE</text>
+
+        <g filter="url(#s4dSk)" fill="none" stroke="#0C1F2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <!-- the page -->
+          <rect x="60" y="44" width="720" height="250" rx="4" transform="rotate(-0.3 420 169)" fill="#FFFFFF"/>
+          <!-- header band -->
+          <rect x="76" y="56" width="688" height="26" rx="4" fill="url(#s4dHc)"/>
+          <!-- row rules -->
+          <path d="M76 108 L764 108 M76 168 L764 168 M76 228 L764 228 M76 286 L764 286" stroke="#C5D3DF"/>
+          <!-- column rules: door, question, teach-back -->
+          <path d="M170 90 L170 286 M350 90 L350 286" stroke="#C5D3DF" stroke-dasharray="4 4"/>
+          <!-- strike-throughs on the before lines -->
+          <path d="M360 127 L648 127" stroke="#B0451C"/>
+          <path d="M360 187 L602 187" stroke="#B0451C"/>
+          <path d="M360 247 L610 247" stroke="#B0451C"/>
+          <!-- the mark on the chosen row -->
+          <path d="M38 138 L50 150 L68 126" stroke="#B0451C" stroke-width="3"/>
+        </g>
+
+        <text class="s4dS" x="86" y="73">request, in her words: "we need a sales dashboard, the Monday report is always late"</text>
+        <text class="s4dA" x="84" y="100">DOOR</text>
+        <text class="s4dA" x="180" y="100">THE QUESTION</text>
+        <text class="s4dA" x="360" y="100">TEACH-BACK, BEFORE AND AFTER</text>
+
+        <text class="s4dB" x="84" y="130">2 Decision</text>
+        <text class="s4dS" x="180" y="130">when a number looks bad,</text>
+        <text class="s4dS" x="180" y="145">who calls it, by when?</text>
+        <text class="s4dS" x="360" y="130">the refresh cadence sets the latency budget for the extract</text>
+        <text class="s4dL" x="360" y="148">the deadline tells me how fresh it must be; fresher costs more</text>
+
+        <text class="s4dL" x="84" y="190">3 Current way</text>
+        <text class="s4dS" x="180" y="190">where do the stock</text>
+        <text class="s4dS" x="180" y="205">numbers come from?</text>
+        <text class="s4dS" x="360" y="190">typed inputs and system-of-record data differ</text>
+        <text class="s4dL" x="360" y="208">a number typed on a Friday behaves differently from</text>
+        <text class="s4dL" x="360" y="222">one a till records; I need to know which this is</text>
+
+        <text class="s4dL" x="84" y="250">4 Data state</text>
+        <text class="s4dS" x="180" y="250">same product codes in</text>
+        <text class="s4dS" x="180" y="265">SG and MY? who decides?</text>
+        <text class="s4dS" x="360" y="250">SKU master alignment across regions is the risk</text>
+        <text class="s4dL" x="360" y="268">two outlets naming one thing two ways is why a total</text>
+        <text class="s4dL" x="360" y="282">is wrong; a naming problem before a data problem</text>
+
+        <text class="s4dB" x="800" y="126">the mark:</text>
+        <text class="s4dB" x="800" y="142">the one</text>
+        <text class="s4dB" x="800" y="158">concept, row 2</text>
+
+        <text class="s4dN" x="30" y="318">Struck lines are true. They are struck because she would have had to ask about them, and she would not have asked.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the column that was narrowest on the session 1 sheet is the one that outlives the meeting</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step">
+        <p><strong>Paste your twelve teach-back lines as they are.</strong> No editing yet. If you have no sheet, these twelve are the bank's, two per door in door order, and they are the raw material for the rest of the steps.</p>
+        <div class="prompt-box good"><span class="label">★ Step 1 · the twelve, as written</span>1  A dashboard is a tool. I need the outcome, because I can check a tool against an outcome and not the other way round.
+2  Whatever you are measured on is the number I should be able to move. Everything else is nice to have.
+3  I start with the Monday because a report is only worth what someone does after reading it.
+4  The deadline tells me how fresh the data has to be. Fresher costs more, so I only build fresh where a decision needs it.
+5  The current file is the spec. Every column in it is a decision somebody once made, and I would rather inherit those than guess.
+6  A number that is typed by a person on a Friday behaves differently from one a till records. I need to know which I am dealing with.
+7  Every hand-off between systems is a place a number can change. I am counting the hand-offs.
+8  Two outlets calling the same thing by two names is the most common reason a total is wrong. It is a naming problem before it is a data problem.
+9  I ask for the limits first so I do not propose something you could never approve.
+10 A table that needs a laptop is not read on a phone. The device decides the design.
+11 If we agree on the test now, neither of us has to argue about it later.
+12 The person who works with me becomes the person who can run it after I leave. That is the whole point.</div>
+      </div>
+      <div class="step">
+        <p><strong>Circle every word she would have to ask about.</strong> Read each line aloud to the person next to you. Mark the word at the moment their face changes, not the word you suspect. In the bank's twelve, look hard at "spec", "hand-off" and "the device": each is borderline, and borderline means circle it.</p>
+        <div class="prompt-box good"><span class="label">★ Step 2 · the circles</span>5  The current file is the [spec]. Every column in it is a decision somebody once made ...
+7  Every [hand-off] between systems is a place a number can change. I am counting the [hand-offs].
+10 A table that needs a laptop is not read on a phone. [The device decides the design.]
+Your own sheet will have more. "Refresh", "extract", "pipeline", "latency" and "granularity" are the usual five.</div>
+      </div>
+      <div class="step">
+        <p><strong>Replace each circled word, keeping one sentence.</strong> The replacement is the plain thing the word stands for, and it is allowed to be longer than the word it replaces. It is not allowed to become a second sentence.</p>
+        <div class="prompt-box good"><span class="label">★ Step 3 · the replacements</span>5  The file you build every Monday is the plan nobody wrote down; every column is a decision someone once made, and I would rather inherit those than guess.
+7  Every time a number is copied from one system to another it can change, so I am counting the copies.
+10 A table that needs a laptop is not read on a phone, so where they read it decides how it looks.</div>
+      </div>
+      <div class="step">
+        <p><strong>Read all twelve aloud and cut any that became two.</strong> The test is a breath: if you had to take one in the middle, it is two sentences wearing a semicolon. Cut the second half. If the second half was the important half, keep that and cut the first.</p>
+        <div class="prompt-box good"><span class="label">★ Step 4 · one that became two, and the cut</span>Before:  The file you build every Monday is the plan nobody wrote down; every column is a decision someone once made, and I would rather inherit those than guess.
+After:   Every column in your Monday file is a decision someone once made, and I would rather inherit those than guess.</div>
+      </div>
+      <div class="step">
+        <p><strong>Choose the one concept and write its ninety-second version.</strong> Pick by the false belief most likely to form in this meeting. Three sentences in the fixed order: what it is, why it costs, what it means for her Monday. Mark that row on the sheet.</p>
+        <div class="prompt-box good"><span class="label">★ Step 5 · the one, chosen and written</span>Concept: freshness is a cost, weekly is a choice   (row 4, decision door)
+Belief it prevents: "you'd want this daily, right?"
+What it is:   How often a number is remade is a choice we make, not something the computer decides.
+Why it costs: Every rebuild is an export, a check, and a person to do the checking, so daily is five times the work of weekly.
+Her Monday:   The reorder is due Tuesday noon and decided once a week, so a weekly number that is right on Monday is the correct one.</div>
+      </div>
+      <div class="step">
+        <p><strong>Write the sentence you hope she says to her boss.</strong> One line, in her voice, that a regional GM would accept on a Tuesday. If you cannot write it, go back to step 5 and pick a concept that matters to her rather than to you.</p>
+        <div class="prompt-box good"><span class="label">★ Step 6 · her sentence</span>"The report is weekly on purpose. Daily would cost five times the work and none of us decides anything daily."</div>
+      </div>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>The teach-back lines are the part of the meeting that outlives it.</strong> The facts go into your notes and then into session 5's tree. The lines go into her, and she carries them into the next meeting you are not in. Keep the rewritten column; session 6's one-page brief reuses the same plain words, so that what she reads in 24 hours matches what she heard.</p>
+    </div>
+  </section>
+
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 5</h2>
+      <span class="tag exercise">30 min</span>
+    </div>
+    <ol>
+      <li><strong>Rewrite the lines for a real request.</strong> Take the sheet you built in session 1 for something on your own desk and run steps 2 to 4 on its teach-back column. Keep the before and after side by side; the difference is the lesson.</li>
+      <li><strong>Record yourself asking three questions</strong>, each with its teach-back line, on your phone. Play it back and count the words the business person would have to ask about. Most people find one per line on the first pass and none on the third.</li>
+      <li><strong>Pick the one concept for your Monday meeting.</strong> Name the false belief it prevents, write the three sentences, and write the line you hope the business person repeats to their boss.</li>
+      <li><strong>Bring the rewritten sheet to session 5.</strong> Her answers become a tree there, and the plain words you settled on tonight become the labels on it.</li>
+    </ol>
+  </section>
+
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 4 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">1 · What does the curse of knowledge predict about an analyst's own teach-back lines, and why is reading them aloud the test?</p>
+      <button class="qopt" type="button">A · The analyst will write lines that are too simple, because they underestimate the business person</button>
+      <button class="qopt" type="button">B · The analyst cannot hear their own jargon from the inside, so lines that feel plain to them carry words she would have to ask about; only another person's face, in real time, shows which words those are, because on paper the writer hears the whole tune behind every word</button>
+      <button class="qopt" type="button">C · Business people cannot learn technical ideas, so the lines should be dropped</button>
+      <button class="qopt" type="button">D · Reading aloud makes the lines shorter, which is the main goal</button>
+      <p class="qwhy">Camerer, Loewenstein and Weber's finding is that the better-informed person cannot fully set their knowledge aside when predicting what the less-informed person understands. "Cadence" and "latency" are invisible to the person who uses them daily. The listener's "sorry, what do you mean?" is the only reliable detector, and she will usually nod instead, which is why you read to a colleague first.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="3">
+      <p class="qtext">2 · Why one concept per meeting, and how is it chosen?</p>
+      <button class="qopt" type="button">A · Because business people can only absorb one idea per hour; choose the most technically important one</button>
+      <button class="qopt" type="button">B · Because there is only time for one; choose the one you explain best</button>
+      <button class="qopt" type="button">C · Because the other eleven lines are optional; choose the one from door 4</button>
+      <button class="qopt" type="button">D · Because single sentences land as background and ninety seconds of explanation is a budget you can only spend once without the meeting turning into a lecture; choose the concept the most likely false belief would attach to in this meeting, since an unexplained concept is what a leading question turns into a wrong build</button>
+      <p class="qwhy">For Harbourline the candidates are freshness ("you'd want this daily, right?") and typed versus recorded (she assumes stock is in the POS). Both are chosen by the belief they prevent, not by how interesting they are. An analyst who picks the naming problem and explains it beautifully can still ship a daily report.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · What separates a lesson from a lecture, and what is the only proof that a line taught something?</p>
+      <button class="qopt" type="button">A · A lesson is one plain, true sentence before a question and she keeps talking; a lecture is the second and third sentence, and the tell is that she stops answering and starts nodding. The only proof of teaching is a follow-up question from her, because a nod proves nothing and "makes sense" closes the topic</button>
+      <button class="qopt" type="button">B · A lesson uses slides; a lecture does not. The proof is that she thanks you</button>
+      <button class="qopt" type="button">C · A lesson is longer than a lecture because it goes into more depth. The proof is that she takes notes</button>
+      <button class="qopt" type="button">D · There is no difference; both are the analyst explaining. The proof is a follow-up email</button>
+      <p class="qwhy">Fitzpatrick's third rule, talk less and listen more, is the whole discipline. On the bench the mechanism is trust: every open question earns a point, the sensitive facts sit behind trust gates, and the teach-back line is where the point is earned. A lecture spends minutes and earns nothing, the same arithmetic as the jargon opener with a friendlier face.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The curse of knowledge, the term and the finding</span><span class="note">Camerer, Loewenstein and Weber, "The Curse of Knowledge in Economic Settings", Journal of Political Economy 97(5), 1989. One paragraph here; the Tech Writing course teaches it in depth</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Talk less and listen more; the third rule</span><span class="note">Rob Fitzpatrick, The Mom Test, 2013; reported from summaries, and only his verified wording is used anywhere on these pages</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Measurement as a plain sentence</span><span class="note">Douglas W. Hubbard, How to Measure Anything, 3rd ed., Wiley, 2014; definition reported as it appears across sources, book not opened here</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">The lecture and lesson timelines</span><span class="note">Constructed illustrations of a shape. No study of talk time in discovery meetings is cited, because none was read, and no number is claimed for either rail</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Harbourline, Adeline Tan and the three stories</span><span class="note">Constructed. The denormalise nod, the wrong concept and the stock follow-up are invented to be typical, and every fact behind them is printed in the bench's bank file</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Every fact on this page, and its verification tier, is recorded in the course's source map.</p>
+  </section>
+
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 4 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>Your curse, not hers</b><span>You cannot hear your own jargon. Read the line to someone else and watch their face.</span></div>
+      <div class="cheat-item"><b>The usual offenders</b><span>Pipeline, extract, schema, latency, granularity, join, warehouse, SLA. Each has a plain word.</span></div>
+      <div class="cheat-item"><b>Plain is not dumbed down</b><span>The person paying has to be able to check the work. Hubbard's definition has no term of art in it.</span></div>
+      <div class="cheat-item"><b>One concept per meeting</b><span>Ninety seconds, three sentences: what it is, why it costs, her Monday. Chosen by the belief it prevents.</span></div>
+      <div class="cheat-item"><b>Plain, true, one sentence</b><span>A second sentence is a lecture. The tell: she stops answering and starts nodding.</span></div>
+      <div class="cheat-item"><b>The only proof</b><span>A follow-up question from her. A nod proves nothing; "makes sense" closes the topic.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>You now have her answers in plain words and twelve lines she did not have to decode. Session 5 turns the answers into a tree: the outcome at the top, the pains she named underneath it, and the things you could build under each pain. The tree gets pruned to three joint projects with a prioritisation you write down rather than feel, and the first of the three is a pilot in four outlets, because she told you she would never sponsor all 38 at once.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 4 of 6 · learn-asking-right-questions-as-da-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="03-the-analysts-questions-and-the-bench.html">← Prev: The analyst's questions, and the bench</a> &nbsp;·&nbsp; <a href="05-from-pains-to-three-projects.html">Next: From pains to three joint projects →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
